@@ -1,65 +1,68 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { HeroAvatar, HeroSocial, Section } from 'astro-boilerplate-components';
+import kohaku from 'src/images/kohaku-bg-full.png';
+
+import { GradientText } from '@/components/GradientText';
 
 const Hero = () => (
   <Section>
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          <GradientText>Kohaku BlueLeaf</GradientText>
+          <br />
+          <span className="text-xl">Shih-Ying, Yeh</span>
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          An undergrad student in Taiwan. <br></br>
+          Making fun stuff with Generative AI. <br></br>
+          <br></br>
+          <span className="font-bold italic">
+            AI art should be looked like AI, not like humans.
+          </span>
         </>
       }
       avatar={
         <img
-          className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          className="h-60"
+          src={kohaku.src}
           alt="Avatar image"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
-            />
-          </a>
+          <div
+            style={{
+              filter:
+                'invert(45%) sepia(30%) saturate(2000%) hue-rotate(220deg) brightness(90%) contrast(80%);',
+            }}
+          >
+            <div
+              style={{ filter: 'invert(1) brightness(0)' }}
+              className="flex flex-row"
+            >
+              <a className="mr-3" href="https://github.com/KohakuBlueleaf">
+                <HeroSocial
+                  src="/assets/images/github-icon.png"
+                  alt="Github icon"
+                />
+              </a>
+              <a className="mr-3" href="https://twitter.com/KBlueleaf">
+                <HeroSocial
+                  src="/assets/images/twitter-bird.png"
+                  alt="Twitter icon"
+                />
+              </a>
+              <a className="mr-3" href="https://space.bilibili.com/507303431">
+                <HeroSocial
+                  src="/assets/images/bilibili-icon.png"
+                  alt="Bilibili icon"
+                />
+              </a>
+            </div>
+          </div>
         </>
       }
     />

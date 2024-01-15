@@ -33,14 +33,25 @@
     },
     // Configuration for JavaScript files
     {
-      "files": ["**/*.js", "**/*.jsx"],
-      "parser": "@babel/eslint-parser",
-      "extends": ["plugin:prettier/recommended"],
+      "files": ["./src/**/*.js", "./src/**/*.jsx"],
+      "settings": {
+          "react": {
+              "version": "detect"
+          }
+      },
+      "env": {
+          "browser": true,
+          "es2021": true
+      },
+      "extends": [
+          "plugin:react/recommended",
+          "plugin:react/jsx-runtime"
+      ],
       "parserOptions": {
         "parser": "@babel/eslint-parser",
-        "requireConfigFile": false, // <== ADD THIS
-        "ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
-        "sourceType": "module" // Allows for the use of imports
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "requireConfigFile": false
       },
       "rules": {
         "prettier/prettier": [

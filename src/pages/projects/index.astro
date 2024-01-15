@@ -1,0 +1,28 @@
+---
+import { PaginationHeader, Section } from 'astro-boilerplate-components';
+
+import { ProjectList } from '@/partials/ProjectList';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+
+import { projs } from './proj-list';
+
+const titleSuffix = ` - ${AppConfig.site_name}`;
+const titleBase = `Publications`;
+const title = titleBase + titleSuffix;
+const description =
+  'Pagination example built with Astro styled with Tailwind CSS.';
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <PaginationHeader
+      title='Projects'
+      description='The list of my open sourced projects'
+    />
+  </Section>
+
+  <Section>
+    <ProjectList projs={projs} />
+  </Section>
+</Base>
