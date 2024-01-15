@@ -18,4 +18,4 @@ const projs = [
   },
 ];
 
-export default { projs };
+export default projs;

@@ -4,7 +4,7 @@
 import { Section } from 'astro-boilerplate-components';
 
 import { GradientText } from '@/components/GradientText.tsx';
-import { ProjectList } from '@/partials/ProjectList';
+import ProjectList from '@/partials/ProjectList';
 
 const ProjectListSection = (props) => (
   <Section
@@ -26,4 +26,4 @@ const ProjectListSection = (props) => (
   </Section>
 );
 
-export default { ProjectListSection };
+export default ProjectListSection;

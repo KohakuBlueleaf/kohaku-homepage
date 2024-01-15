@@ -25,4 +25,4 @@ function PublicationList(props) {
   );
 }
 
-export default { PublicationList };
+export default PublicationList;

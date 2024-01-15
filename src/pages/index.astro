@@ -2,15 +2,17 @@
 import { type IFrontmatter } from 'astro-boilerplate-components';
 
 import { Hero } from '@/partials/Hero';
-import { ProjectListSection } from '@/partials/ProjectListSection';
-import { PublicationListSection } from '@/partials/PublicationListSection';
+import ProjectListSection from '@/partials/ProjectListSection';
+import PublicationListSection from '@/partials/PublicationListSection';
 import { RecentPosts } from '@/partials/RecentPosts';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
 
-import { projs } from './projects/proj-list';
-import { pubs } from './pubs/pubs-list';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import projs from './projects/proj-list';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import pubs from './pubs/pubs-list';
 
 const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
 const sortedPosts = sortByDate(allPosts);

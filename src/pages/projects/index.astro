@@ -1,11 +1,12 @@
 ---
 import { PaginationHeader, Section } from 'astro-boilerplate-components';
 
-import { ProjectList } from '@/partials/ProjectList';
+import ProjectList from '@/partials/ProjectList';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 
-import { projs } from './proj-list';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import projs from './proj-list';
 
 const titleSuffix = ` - ${AppConfig.site_name}`;
 const titleBase = `Publications`;

@@ -16,4 +16,4 @@ const pubs = [
   },
 ];
 
-export default { pubs };
+export default pubs;
