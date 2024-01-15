@@ -31,6 +31,28 @@
         "import/no-unresolved": "off" // Also false positive with mjs file
       }
     },
+    // Configuration for JavaScript files
+    {
+      "files": ["**/*.js", "**/*.jsx"],
+      "parser": "@babel/eslint-parser",
+      "extends": ["plugin:prettier/recommended"],
+      "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "requireConfigFile": false, // <== ADD THIS
+        "ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
+        "sourceType": "module" // Allows for the use of imports
+      },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "endOfLine": "auto"
+          }
+        ]
+      }
+    },
+    
     // Configuration for TypeScript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
@@ -90,6 +112,7 @@
         ]
       }
     },
+    
     // Configuration for Astro
     {
       "files": ["**/*.astro"],
