@@ -17,15 +17,10 @@ const css = `
 
   display: block;
   background-image: url(${kohaku.src});
-  background-size:cover;
+  background-size: cover;
   width: 100%;
   height: 100%;
-
-  -webkit-filter: blur(25px);
-  -moz-filter: blur(25px);
-  -o-filter: blur(25px);
-  -ms-filter: blur(25px);
-  filter: blur(25px);
+  filter: blur(15px) contrast(2);
 }
 `;
 
@@ -78,7 +73,7 @@ const Hero = () => (
           <div
             style={{
               filter:
-                'invert(45%) sepia(30%) saturate(2000%) hue-rotate(220deg) brightness(90%) contrast(80%);',
+                'invert(45%) sepia(30%) saturate(2000%) hue-rotate(220deg) brightness(90%) contrast(80%)',
             }}
           >
             <div

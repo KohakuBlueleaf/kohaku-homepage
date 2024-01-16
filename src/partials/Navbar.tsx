@@ -12,7 +12,13 @@ const Navbar = () => (
     <NavbarTwoColumns>
       <a href="/">
         <Logo
-          icon={<img className="mr-1 h-10 w-10" src={kohaku_icon.src} />}
+          icon={
+            <img
+              className="mr-1"
+              src={kohaku_icon.src}
+              style={{ width: '3.5rem', borderRadius: '20%' }}
+            />
+          }
           name="Kohaku is a cute dragon girl."
         />
       </a>
