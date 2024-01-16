@@ -32,7 +32,7 @@ const projs = [
   {
     name: 'Kohaku series SD/SDXL models',
     description: `A series of anime style Stable Diffusion models.`,
-    link: 'https://github.com/AUTOMATIC1111/stable-diffusion-webui',
+    link: 'https://civitai.com/user/kblueleaf',
     category: [
       { color: ColorTags.LIME, name: 'Stable Diffusion' },
       { color: ColorTags.LIME, name: 'Pretrained Models' },
