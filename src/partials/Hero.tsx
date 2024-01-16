@@ -3,6 +3,32 @@ import kohaku from 'src/images/kohaku-bg-full.png';
 
 import { GradientText } from '@/components/GradientText';
 
+const css = `
+#avatar{
+  overflow: auto,
+  position: relative,
+}
+#avatar-after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url(${kohaku.src});
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+  filter: blur(25px);
+}
+`;
+
 const Hero = () => (
   <Section>
     <HeroAvatar
@@ -10,13 +36,18 @@ const Hero = () => (
         <>
           <GradientText>Kohaku BlueLeaf</GradientText>
           <br />
-          <span className="text-xl">Shih-Ying, Yeh</span>
+          <span className="text-xl">Shih-Ying, Yeh 葉適穎</span>
         </>
       }
       description={
         <>
-          An undergrad student in Taiwan. <br></br>
-          Making fun stuff with Generative AI. <br></br>
+          &emsp; I am a junior undergraduate student in Computer Science
+          Department, National Tsing Hua University in Taiwan.
+          <br></br>&emsp; I am interested in improving the performance of
+          Generative AI, both in terms of training a better model (LyCORIS,
+          KohakuXL) and building an efficient and robust system
+          (AUTOMATIC1111/stable-diffusion-webui).
+          <br></br>
           <br></br>
           <span className="font-bold italic">
             AI art should be looked like AI, not like humans.
@@ -24,12 +55,23 @@ const Hero = () => (
         </>
       }
       avatar={
-        <img
-          className="h-60"
-          src={kohaku.src}
-          alt="Avatar image"
-          loading="lazy"
-        />
+        <>
+          <style>{css}</style>
+          <div style={{ position: 'relative' }}>
+            <div id="avatar">
+              <div id="avatar-after"></div>
+              <img
+                style={{
+                  width: '20rem',
+                  filter: 'transparent',
+                }}
+                src={kohaku.src}
+                alt="Avatar image"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </>
       }
       socialButtons={
         <>
@@ -47,6 +89,18 @@ const Hero = () => (
                 <HeroSocial
                   src="/assets/images/github-icon.png"
                   alt="Github icon"
+                />
+              </a>
+              <a className="mr-3" href="mailto:kohaku@kblueleaf.net">
+                <HeroSocial src="/assets/images/email.png" alt="Email icon" />
+              </a>
+              <a
+                className="mr-3"
+                href="https://www.linkedin.com/in/適穎-葉-80797327b/"
+              >
+                <HeroSocial
+                  src="/assets/images/linkedin-icon.png"
+                  alt="Linkedin Icon"
                 />
               </a>
               <a className="mr-3" href="https://twitter.com/KBlueleaf">
