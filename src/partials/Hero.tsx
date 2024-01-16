@@ -3,7 +3,7 @@ import kohaku from 'src/images/kohaku-bg-full.png';
 
 import { GradientText } from '@/components/GradientText';
 
-const css = `
+const cssAvatar = `
 #avatar{
   overflow: auto,
   position: relative,
@@ -23,6 +23,12 @@ const css = `
   filter: blur(15px) contrast(2);
 }
 `;
+const cssDesc = `
+p {
+  line-height: 1.75rem !important;
+}
+`;
+
 
 const Hero = () => (
   <Section>
@@ -36,9 +42,11 @@ const Hero = () => (
       }
       description={
         <>
-          &emsp; I am a junior undergraduate student in Computer Science
+          <style>{cssDesc}</style>
+          I am a junior undergraduate student in Computer Science
           Department, National Tsing Hua University in Taiwan.
-          <br></br>&emsp; I am interested in improving the performance of
+          <br></br>
+          <br></br> I am interested in improving the performance of
           Generative AI, both in terms of training a better model (LyCORIS,
           KohakuXL) and building an efficient and robust system
           (AUTOMATIC1111/stable-diffusion-webui).
@@ -51,7 +59,7 @@ const Hero = () => (
       }
       avatar={
         <>
-          <style>{css}</style>
+          <style>{cssAvatar}</style>
           <div style={{ position: 'relative' }}>
             <div id="avatar">
               <div id="avatar-after"></div>
