@@ -1,5 +1,5 @@
 import { HeroAvatar, HeroSocial, Section } from 'astro-boilerplate-components';
-import kohaku from 'src/images/kohaku-bg-full.png';
+import kohaku from 'src/images/kohaku-bg-full.webp';
 
 import { GradientText } from '@/components/GradientText';
 
@@ -62,10 +62,7 @@ const Hero = () => (
             <div className="mt-5" id="avatar">
               <div id="avatar-after"></div>
               <img
-                style={{
-                  width: '20rem',
-                  filter: 'transparent',
-                }}
+                style={{ width: '20rem' }}
                 src={kohaku.src}
                 alt="Avatar image"
                 loading="lazy"
@@ -88,31 +85,31 @@ const Hero = () => (
             >
               <a className="mr-3" href="https://github.com/KohakuBlueleaf">
                 <HeroSocial
-                  src="/assets/images/github-icon.png"
+                  src="/assets/images/github-icon.webp"
                   alt="Github icon"
                 />
               </a>
               <a className="mr-3" href="mailto:kohaku@kblueleaf.net">
-                <HeroSocial src="/assets/images/email.png" alt="Email icon" />
+                <HeroSocial src="/assets/images/email.webp" alt="Email icon" />
               </a>
               <a
                 className="mr-3"
                 href="https://www.linkedin.com/in/適穎-葉-80797327b/"
               >
                 <HeroSocial
-                  src="/assets/images/linkedin-icon.png"
+                  src="/assets/images/linkedin-icon.webp"
                   alt="Linkedin Icon"
                 />
               </a>
               <a className="mr-3" href="https://twitter.com/KBlueleaf">
                 <HeroSocial
-                  src="/assets/images/twitter-bird.png"
+                  src="/assets/images/twitter-bird.webp"
                   alt="Twitter icon"
                 />
               </a>
               <a className="mr-3" href="https://space.bilibili.com/507303431">
                 <HeroSocial
-                  src="/assets/images/bilibili-icon.png"
+                  src="/assets/images/bilibili-icon.webp"
                   alt="Bilibili icon"
                 />
               </a>

@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
 import { ColorTags } from 'astro-boilerplate-components';
-import lycorisIcon from '@/images/icon.png';
-import sdwebuiIcon from '@/images/sd-webui.png';
-import kohakuModelIcon from '@/images/00905.png';
+import lycorisIcon from '@/images/icon.webp';
+import sdwebuiIcon from '@/images/sd-webui.webp';
+import kohakuModelIcon from '@/images/00905.webp';
 
 const projs = [
   {

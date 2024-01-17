@@ -3,7 +3,7 @@ layout: '@/templates/BasePost.astro'
 title: ICLR 2024 accepted
 description: The paper of LyCORIS project is accepted by ICLR 2024!
 pubDate: 2024-01-17T13:00:00Z
-imgSrc: '/assets/images/iclr-accept.png'
+imgSrc: '/assets/images/iclr-accept.webp'
 imgAlt: 'Image post'
 ---
 # ICLR 2024 accepted

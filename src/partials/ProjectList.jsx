@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { Project, Tags } from 'astro-boilerplate-components';
+import { Tags } from 'astro-boilerplate-components';
+import { Project } from '@/components/Project';
 
 const ProjectList = (props) => (
   <div className="flex flex-col gap-6">

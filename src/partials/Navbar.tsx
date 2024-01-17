@@ -5,7 +5,7 @@ import {
   NavMenuItem,
   Section,
 } from 'astro-boilerplate-components';
-import kohaku_icon from 'src/images/kohaku-icon.png';
+import kohaku_icon from 'src/images/kohaku-icon.webp';
 
 const Navbar = () => (
   <Section>
