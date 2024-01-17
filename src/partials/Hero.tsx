@@ -29,7 +29,6 @@ p {
 }
 `;
 
-
 const Hero = () => (
   <Section>
     <HeroAvatar
@@ -42,13 +41,12 @@ const Hero = () => (
       }
       description={
         <>
-          <style>{cssDesc}</style>
-          I am a junior undergraduate student in Computer Science
-          Department, National Tsing Hua University in Taiwan.
+          <style>{cssDesc}</style>I am a junior undergraduate student in
+          Computer Science Department, National Tsing Hua University in Taiwan.
           <br></br>
-          <br></br> I am interested in improving the performance of
-          Generative AI, both in terms of training a better model (LyCORIS,
-          KohakuXL) and building an efficient and robust system
+          <br></br> I am interested in improving the performance of Generative
+          AI, both in terms of training a better model (LyCORIS, KohakuXL) and
+          building an efficient and robust system
           (AUTOMATIC1111/stable-diffusion-webui).
           <br></br>
           <br></br>
@@ -60,8 +58,8 @@ const Hero = () => (
       avatar={
         <>
           <style>{cssAvatar}</style>
-          <div style={{ position: 'relative' }}>
-            <div id="avatar">
+          <div className="relative">
+            <div className="mt-5" id="avatar">
               <div id="avatar-after"></div>
               <img
                 style={{
