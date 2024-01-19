@@ -15,8 +15,7 @@ const Project = (props: IProjectProps) => {
   const altStr = props.img.alt.replace(/\s/g, '');
   const cssBlurryEdge = `
   #blurry-edge-${altStr}{
-    overflow: auto,
-    position: relative,
+    position: relative;
   }
   #blurry-edge-after-${altStr}{
     position: absolute;
@@ -29,6 +28,7 @@ const Project = (props: IProjectProps) => {
     background-size: cover;
     width: 100%;
     height: 100%;
+    transition: 0.25s ease;
   }
   #blurry-edge-${altStr}:hover #blurry-edge-after-${altStr} {
     filter: blur(6px) contrast(1);
