@@ -17,8 +17,8 @@ import pubs from './pubs/pubs-list';
 const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
 const sortedPosts = sortByDate(allPosts);
 const lastThreePosts = sortedPosts.slice(0, 3);
-const lastThreePubs = pubs.slice(0, 3);
-const lastThreeProjs = projs.slice(0, 3);
+const lastThreePubs = pubs.slice(0, 4);
+const lastThreeProjs = projs.slice(0, 4);
 
 const { title } = AppConfig;
 const { description } = AppConfig;

@@ -3,6 +3,7 @@ import { ColorTags } from 'astro-boilerplate-components';
 import lycorisIcon from '@/images/icon.webp';
 import sdwebuiIcon from '@/images/sd-webui.webp';
 import kohakuModelIcon from '@/images/00905.webp';
+import hakubooruIcon from '@/images/hakubooru-icon.webp';
 
 const projs = [
   {
@@ -38,6 +39,13 @@ const projs = [
       { color: ColorTags.LIME, name: 'Pretrained Models' },
     ],
     img: { src: kohakuModelIcon.src, alt: 'Kohaku Model Icon' },
+  },
+  {
+    name: 'HakuBooru',
+    description: `text-image dataset maker for anime-style images`,
+    link: 'https://github.com/KohakuBlueleaf/HakuBooru',
+    category: [{ color: ColorTags.LIME, name: 'Dataset' }],
+    img: { src: hakubooruIcon.src, alt: 'HakuBooru Icon' },
   },
 ];
 
