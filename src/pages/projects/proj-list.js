@@ -2,7 +2,7 @@
 import { ColorTags } from 'astro-boilerplate-components';
 import lycorisIcon from '@/images/icon.webp';
 import sdwebuiIcon from '@/images/sd-webui.webp';
-import kohakuModelIcon from '@/images/00905.webp';
+import kohakuModelIcon from '@/images/kohaku-series-model-icon.webp';
 import hakubooruIcon from '@/images/hakubooru-icon.webp';
 
 const projs = [
