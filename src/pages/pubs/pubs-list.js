@@ -6,11 +6,11 @@ const pubs = [
     description: `
       <span style='color: yellow'>Shin-Ying Yeh</span>, Yu-Guan Hsieh, 
       Zhidong Gao, Bernard B W Yang, Giyeong Oh, Yanmin Gong`,
-    link: 'https://arxiv.org/abs/2309.14859',
+    link: 'https://openreview.net/forum?id=wfzXa8e783',
     category: [
       {
-        color: ColorTags.RED,
-        name: 'arxiv',
+        color: ColorTags.GREEN,
+        name: 'ICLR 2024',
       },
     ],
   },
