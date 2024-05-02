@@ -1,12 +1,12 @@
 import { HeroAvatar, HeroSocial, Section } from 'astro-boilerplate-components';
+import badge from 'src/images/kohaku-badge.png';
 import kohaku from 'src/images/kohaku-bg-full.webp';
 
 import { GradientText } from '@/components/GradientText';
 
 const cssAvatar = `
 #avatar{
-  overflow: auto,
-  position: relative,
+  overflow: hidden;
 }
 #avatar-after {
   content: "";
@@ -17,6 +17,27 @@ const cssAvatar = `
 
   display: block;
   background-image: url(${kohaku.src});
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(15px) contrast(2);
+}
+`;
+const cssBadge = `
+#badge{
+  overflow: hidden;
+  border-radius: 15%;
+}
+#badge-after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 5%;
+
+  display: block;
+  background-image: url(${badge.src});
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -34,9 +55,26 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          <GradientText>Kohaku BlueLeaf</GradientText>
-          <br />
-          <span className="text-xl">Shih-Ying, Yeh 葉適穎</span>
+          <div className="mb-4 flex flex-row items-center">
+            <div className="mr-10">
+              <style>{cssBadge}</style>
+              <div className="relative">
+                <div id="badge">
+                  <div id="badge-after"></div>
+                  <img
+                    style={{ height: '8rem' }}
+                    src={badge.src}
+                    alt="Avatar image"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <GradientText>Kohaku BlueLeaf</GradientText>
+              <span className="text-xl">Shih-Ying, Yeh 葉適穎</span>
+            </div>
+          </div>
         </>
       }
       description={
@@ -59,10 +97,10 @@ const Hero = () => (
         <>
           <style>{cssAvatar}</style>
           <div className="relative">
-            <div className="mt-5" id="avatar">
+            <div id="avatar">
               <div id="avatar-after"></div>
               <img
-                style={{ width: '20rem' }}
+                style={{ width: '24rem' }}
                 src={kohaku.src}
                 alt="Avatar image"
                 loading="lazy"
