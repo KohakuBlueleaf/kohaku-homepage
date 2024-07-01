@@ -1,9 +1,10 @@
 /* eslint-disable import/no-unresolved */
 import { ColorTags } from 'astro-boilerplate-components';
-import lycorisIcon from '@/images/icon.webp';
+import lycorisIcon from '@/images/lycoris.webp';
 import sdwebuiIcon from '@/images/sd-webui.webp';
 import kohakuModelIcon from '@/images/kohaku-series-model-icon.webp';
 import hakubooruIcon from '@/images/hakubooru-icon.webp';
+import dtgIcon from '@/images/dtg.webp';
 
 const projs = [
   {
@@ -18,6 +19,17 @@ const projs = [
       { color: ColorTags.LIME, name: 'Stable Diffusion' },
     ],
     img: { src: lycorisIcon.src, alt: 'Project LyCORIS' },
+  },
+  {
+    name: 'DanTagGen (KGen/TITPOP)',
+    description: `Text to Image with Text Presampling for Optimal Prompting.`,
+    link: 'https://github.com/KohakuBlueleaf/KGen',
+    category: [
+      { color: ColorTags.YELLOW, name: 'python' },
+      { color: ColorTags.FUCHSIA, name: 'Neural Network' },
+      { color: ColorTags.LIME, name: 'LLM' },
+    ],
+    img: { src: dtgIcon.src, alt: 'HakuBooru Icon' },
   },
   {
     name: 'Stable Diffusion Webui (Collaborator)',

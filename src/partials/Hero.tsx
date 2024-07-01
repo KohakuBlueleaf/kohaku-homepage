@@ -72,14 +72,14 @@ const Hero = () => (
             </div>
             <div className="flex flex-col">
               <GradientText>Kohaku BlueLeaf</GradientText>
-              <span className="text-xl">Shih-Ying, Yeh 葉適穎</span>
+              <span className="text-xl">Shih-Ying, Yeh 　 葉適穎</span>
             </div>
           </div>
         </>
       }
       description={
         <>
-          <style>{cssDesc}</style>I am a junior undergraduate student in
+          <style>{cssDesc}</style>I am a senior undergraduate student in
           Computer Science Department, National Tsing Hua University in Taiwan.
           <br></br>
           <br></br> I am interested in improving the performance of Generative
@@ -96,7 +96,7 @@ const Hero = () => (
       avatar={
         <>
           <style>{cssAvatar}</style>
-          <div className="relative">
+          <div className="relative mt-7">
             <div id="avatar">
               <div id="avatar-after"></div>
               <img
