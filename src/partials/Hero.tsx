@@ -1,5 +1,5 @@
 import { HeroAvatar, HeroSocial, Section } from 'astro-boilerplate-components';
-import badge from 'src/images/kohaku-badge.png';
+import badge from 'src/images/kohaku-badge.webp';
 import kohaku from 'src/images/kohaku-bg-full.webp';
 
 import { GradientText } from '@/components/GradientText';
