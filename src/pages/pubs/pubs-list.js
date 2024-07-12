@@ -2,6 +2,20 @@ import { ColorTags } from 'astro-boilerplate-components';
 
 const pubs = [
   {
+    name: 'Graph-Based Captioning: Enhancing Visual Descriptions by Interconnecting Region Captions',
+    description: `
+      Yu-Guan Hsieh, Cheng-Yu Hsieh, <span style='color: yellow'>Shin-Ying Yeh</span>, 
+      Louis Béthune, Hadi Pouransari, Pavan Kumar Anasosalu Vasu, Chun-Liang Li, 
+      Ranjay Krishna, Oncel Tuzel, marco cuturi`,
+    link: 'https://arxiv.org/abs/2407.06723',
+    category: [
+      {
+        color: ColorTags.RED,
+        name: 'Arxiv',
+      },
+    ],
+  },
+  {
     name: 'Navigating Text-To-Image Customization: From LyCORIS Fine-Tuning to Model Evaluation',
     description: `
       <span style='color: yellow'>Shin-Ying Yeh</span>, Yu-Guan Hsieh, 
