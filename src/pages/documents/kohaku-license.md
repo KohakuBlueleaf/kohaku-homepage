@@ -48,7 +48,7 @@ The **Kohaku License** aims to provide maximum freedom for users to work with th
 
 ### 1. General Permissions
 
-Subject to compliance with this License, [Your Organization/Name] grants you a non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty-free, and limited license to access, use, modify, create Derived Models, and distribute the Model solely for **Non-Commercial Purposes**.
+Subject to compliance with this License, [Your Organization/Name] grants you a non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty-free, and limited license to access, use, modify, create Derived Models, and distribute the Model for **Non-Commercial Purposes** and **Commercial Usage** under certain conditions.
 
 ### 2. Categories of Use
 
