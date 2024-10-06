@@ -2,6 +2,17 @@ import { ColorTags } from 'astro-boilerplate-components';
 
 const pubs = [
   {
+    name: 'TIPO: Text to Image with Text Presampling for Prompt Optimization',
+    description: `<span style='color: yellow'>Shin-Ying Yeh</span>`,
+    link: '/document/TIPO-tech-report.pdf',
+    category: [
+      {
+        color: ColorTags.YELLOW,
+        name: 'Technical Report',
+      },
+    ],
+  },
+  {
     name: 'Graph-Based Captioning: Enhancing Visual Descriptions by Interconnecting Region Captions',
     description: `
       Yu-Guan Hsieh, Cheng-Yu Hsieh, <span style='color: yellow'>Shin-Ying Yeh</span>, 
