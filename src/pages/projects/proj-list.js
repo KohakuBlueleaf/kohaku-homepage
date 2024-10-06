@@ -4,7 +4,8 @@ import lycorisIcon from '@/images/lycoris.webp';
 import sdwebuiIcon from '@/images/sd-webui.webp';
 import kohakuModelIcon from '@/images/kohaku-series-model-icon.webp';
 import hakubooruIcon from '@/images/hakubooru-icon.webp';
-import dtgIcon from '@/images/dtg.webp';
+// import dtgIcon from '@/images/dtg.webp';
+import tipoIcon from '@/images/tipo-icon.webp';
 
 const projs = [
   {
@@ -21,7 +22,7 @@ const projs = [
     img: { src: lycorisIcon.src, alt: 'Project LyCORIS' },
   },
   {
-    name: 'DanTagGen (KGen/TITPOP)',
+    name: 'TIPO',
     description: `Text to Image with Text Presampling for Optimal Prompting.`,
     link: 'https://github.com/KohakuBlueleaf/KGen',
     category: [
@@ -29,7 +30,7 @@ const projs = [
       { color: ColorTags.FUCHSIA, name: 'Neural Network' },
       { color: ColorTags.LIME, name: 'LLM' },
     ],
-    img: { src: dtgIcon.src, alt: 'HakuBooru Icon' },
+    img: { src: tipoIcon.src, alt: 'TIPO Icon' },
   },
   {
     name: 'Stable Diffusion Webui (Collaborator)',
