@@ -4,6 +4,7 @@ import lycorisIcon from '@/images/lycoris.webp';
 import sdwebuiIcon from '@/images/sd-webui.webp';
 import kohakuModelIcon from '@/images/kohaku-series-model-icon.webp';
 import hakubooruIcon from '@/images/hakubooru-icon.webp';
+import pixeloeIcon from '@/images/pixeloe-icon.webp';
 // import dtgIcon from '@/images/dtg.webp';
 import tipoIcon from '@/images/tipo-icon.webp';
 
@@ -52,6 +53,16 @@ const projs = [
       { color: ColorTags.LIME, name: 'Pretrained Models' },
     ],
     img: { src: kohakuModelIcon.src, alt: 'Kohaku Model Icon' },
+  },
+  {
+    name: 'PixelOE',
+    description: `Detail-Oriented Pixelization based on Contrast-Aware Outline Expansion.`,
+    link: 'https://github.com/KohakuBlueleaf/PixelOE',
+    category: [
+      { color: ColorTags.YELLOW, name: 'python' },
+      { color: ColorTags.FUCHSIA, name: 'CV algorithm' },
+    ],
+    img: { src: pixeloeIcon.src, alt: 'HakuBooru Icon' },
   },
   {
     name: 'HakuBooru',

@@ -3,12 +3,12 @@ import { ColorTags } from 'astro-boilerplate-components';
 const pubs = [
   {
     name: 'TIPO: Text to Image with Text Presampling for Prompt Optimization',
-    description: `<span style='color: yellow'>Shin-Ying Yeh</span>`,
-    link: '/document/TIPO-tech-report.pdf',
+    description: `<span style='color: yellow'>Shin-Ying Yeh</span>, Sang-Hyun Park, Giyeong Oh, Min Song, Youngjae Yu`,
+    link: 'http://arxiv.org/abs/2411.08127',
     category: [
       {
-        color: ColorTags.YELLOW,
-        name: 'Technical Report',
+        color: ColorTags.RED,
+        name: 'Arxiv',
       },
     ],
   },
