@@ -83,9 +83,15 @@ const Hero = () => (
           Computer Science Department, National Tsing Hua University in Taiwan.
           <br></br>
           <br></br> I am interested in improving the performance of Generative
-          AI, both in terms of training a better model (LyCORIS, KohakuXL) and
-          building an efficient and robust system
-          (AUTOMATIC1111/stable-diffusion-webui).
+          AI, in terms of training a better model, building an efficient and
+          robust system or building useful tools.
+          <br></br>
+          <br></br>
+          I'm currently working on HakuTPU and HomeDiffusion. <br></br>
+          HakuTPU is trying to build a high-performance AI accelerator based on xilinx
+          FPGA.<br></br>
+          And HomeDiffusion wants to make pretrained diffusion model with
+          customer-level hardwares.
           <br></br>
           <br></br>
           <span className="font-bold italic">

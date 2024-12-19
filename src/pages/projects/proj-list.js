@@ -7,6 +7,7 @@ import hakubooruIcon from '@/images/hakubooru-icon.webp';
 import pixeloeIcon from '@/images/pixeloe-icon.webp';
 // import dtgIcon from '@/images/dtg.webp';
 import tipoIcon from '@/images/tipo-icon.webp';
+import HakuIcon from '@/images/HakuTPU-icon.webp';
 
 const projs = [
   {
@@ -32,6 +33,17 @@ const projs = [
       { color: ColorTags.LIME, name: 'LLM' },
     ],
     img: { src: tipoIcon.src, alt: 'TIPO Icon' },
+  },
+  {
+    name: 'HakuTPU [WIP]',
+    description: `AI Accelerator softcore for Xilinx UltraScale+ FPGAs.`,
+    link: 'https://github.com/KohakuBlueleaf/HakuTPU',
+    category: [
+      { color: ColorTags.YELLOW, name: 'Verilog' },
+      { color: ColorTags.FUCHSIA, name: 'Logic Design' },
+      { color: ColorTags.LIME, name: 'AI Accelerator' },
+    ],
+    img: { src: HakuIcon.src, alt: 'HakuTPU Icon' },
   },
   {
     name: 'Stable Diffusion Webui (Collaborator)',
