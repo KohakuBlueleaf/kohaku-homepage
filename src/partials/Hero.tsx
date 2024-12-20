@@ -79,23 +79,24 @@ const Hero = () => (
       }
       description={
         <>
-          <style>{cssDesc}</style>I am a senior undergraduate student in
-          Computer Science Department, National Tsing Hua University in Taiwan.
+          <style>{cssDesc}</style>I am a senior undergraduate student in the
+          Computer Science Department at National Tsing Hua University in
+          Taiwan.
           <br></br>
           <br></br> I am interested in improving the performance of Generative
-          AI, in terms of training a better model, building an efficient and
-          robust system or building useful tools.
+          AI, focusing on training better models, building efficient and robust
+          systems, and developing useful tools.
           <br></br>
           <br></br>
-          I'm currently working on HakuTPU and HomeDiffusion. <br></br>
-          HakuTPU is trying to build a high-performance AI accelerator based on xilinx
-          FPGA.<br></br>
-          And HomeDiffusion wants to make pretrained diffusion model with
-          customer-level hardwares.
+          I'm currently working on two projects: HakuTPU and HomeDiffusion.
+          <br></br>
+          HakuTPU aims to build a high-performance AI accelerator based on
+          Xilinx FPGA, <br></br>while HomeDiffusion seeks to enable pretrained
+          diffusion models on consumer-level hardware.
           <br></br>
           <br></br>
           <span className="font-bold italic">
-            AI art should be looked like AI, not like humans.
+            AI art should look like AI, not humans.
           </span>
         </>
       }
