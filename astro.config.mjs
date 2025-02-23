@@ -24,4 +24,8 @@ export default defineConfig({
     robotsTxt(),
     astroImageTools,
   ],
+  server: {
+    host: '127.0.0.1', // Force IPv4
+    port: 43211, // Or your chosen port
+  },
 });
