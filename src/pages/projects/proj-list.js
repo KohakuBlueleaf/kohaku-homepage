@@ -35,6 +35,26 @@ const projs = [
     img: { src: tipoIcon.src, alt: 'TIPO Icon' },
   },
   {
+    name: 'PixelOE',
+    description: `Detail-Oriented Pixelization based on Contrast-Aware Outline Expansion.`,
+    link: 'https://github.com/KohakuBlueleaf/PixelOE',
+    category: [
+      { color: ColorTags.YELLOW, name: 'python' },
+      { color: ColorTags.FUCHSIA, name: 'CV algorithm' },
+    ],
+    img: { src: pixeloeIcon.src, alt: 'HakuBooru Icon' },
+  },
+  {
+    name: 'Kohaku series SD/SDXL models',
+    description: `A series of anime style Stable Diffusion models.`,
+    link: 'https://civitai.com/user/kblueleaf',
+    category: [
+      { color: ColorTags.LIME, name: 'Stable Diffusion' },
+      { color: ColorTags.LIME, name: 'Pretrained Models' },
+    ],
+    img: { src: kohakuModelIcon.src, alt: 'Kohaku Model Icon' },
+  },
+  {
     name: 'HakuTPU [WIP]',
     description: `AI Accelerator softcore for Xilinx UltraScale+ FPGAs.`,
     link: 'https://github.com/KohakuBlueleaf/HakuTPU',
@@ -57,31 +77,18 @@ const projs = [
     img: { src: sdwebuiIcon.src, alt: 'Automatic1111 avatar' },
   },
   {
-    name: 'Kohaku series SD/SDXL models',
-    description: `A series of anime style Stable Diffusion models.`,
-    link: 'https://civitai.com/user/kblueleaf',
-    category: [
-      { color: ColorTags.LIME, name: 'Stable Diffusion' },
-      { color: ColorTags.LIME, name: 'Pretrained Models' },
-    ],
-    img: { src: kohakuModelIcon.src, alt: 'Kohaku Model Icon' },
-  },
-  {
-    name: 'PixelOE',
-    description: `Detail-Oriented Pixelization based on Contrast-Aware Outline Expansion.`,
-    link: 'https://github.com/KohakuBlueleaf/PixelOE',
-    category: [
-      { color: ColorTags.YELLOW, name: 'python' },
-      { color: ColorTags.FUCHSIA, name: 'CV algorithm' },
-    ],
-    img: { src: pixeloeIcon.src, alt: 'HakuBooru Icon' },
-  },
-  {
     name: 'HakuBooru',
     description: `text-image dataset maker for anime-style images`,
     link: 'https://github.com/KohakuBlueleaf/HakuBooru',
     category: [{ color: ColorTags.LIME, name: 'Dataset' }],
     img: { src: hakubooruIcon.src, alt: 'HakuBooru Icon' },
+  },
+  {
+    name: 'HakuLatent',
+    description: `A comprehensive codebase for training and finetuning Image <> Latent models.`,
+    link: 'https://github.com/KohakuBlueleaf/HakuLatent',
+    category: [{ color: ColorTags.FUCHSIA, name: 'Neural Network' }],
+    img: { src: '', alt: 'HakuLatent Icon' },
   },
 ];
 
