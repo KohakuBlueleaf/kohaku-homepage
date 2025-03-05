@@ -4,7 +4,7 @@ import lycorisIcon from '@/images/lycoris.webp';
 import sdwebuiIcon from '@/images/sd-webui.webp';
 import kohakuModelIcon from '@/images/kohaku-series-model-icon.webp';
 import hakubooruIcon from '@/images/hakubooru-icon.webp';
-import pixeloeIcon from '@/images/pixeloe-icon.webp';
+import pixeloeIcon from '@/images/pixeloe-icon.jpg';
 // import dtgIcon from '@/images/dtg.webp';
 import tipoIcon from '@/images/tipo-icon.webp';
 import HakuIcon from '@/images/HakuTPU-icon.webp';
