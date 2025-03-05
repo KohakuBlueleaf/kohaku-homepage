@@ -6,7 +6,7 @@ import kohakuModelIcon from '@/images/kohaku-series-model-icon.webp';
 import hakubooruIcon from '@/images/hakubooru-icon.webp';
 import pixeloeIcon from '@/images/pixeloe-icon.jpg';
 // import dtgIcon from '@/images/dtg.webp';
-import tipoIcon from '@/images/tipo-icon.webp';
+import tipoIcon from '@/images/tipo-icon.jpg';
 import HakuIcon from '@/images/HakuTPU-icon.webp';
 
 const projs = [
