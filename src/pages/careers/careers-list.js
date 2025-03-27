@@ -1,14 +1,13 @@
 import { ColorTags } from "astro-boilerplate-components";
-// Optional: Import company logos if you have them locally
-// import companyALogo from '@/images/company-a-logo.webp';
-// import companyBLogo from '@/images/company-b-logo.webp';
+import elementLogo from "@/images/element-icon.jpeg";
+import comfyLogo from "@/images/comfy-icon.avif";
+import badappleLogo from "@/images/badapple-logo.jpg";
 
 const careers = [
   {
     title: "Open Source Contributor",
     company: "Kohaku Lab",
     logo: {
-      // Optional
       src: "/src/images/lycoris.webp", // Assuming you want to use existing icon
       alt: "LyCORIS Logo",
     },
@@ -24,17 +23,13 @@ const careers = [
       { color: ColorTags.YELLOW, name: "Python" },
       { color: ColorTags.FUCHSIA, name: "Neural Network" },
       { color: ColorTags.GREEN, name: "Open Source" },
-      { color: ColorTags.VIOLET, name: "Collaboration" },
     ],
-    // slug: 'lycoris-contributor'
   },
   {
     title: "ML/NN Engineer (Part-time)",
     company: "Comfy Org",
     logo: {
-      // Optional: Add logo path
-      // src: companyALogo.src,
-      src: "/assets/images/placeholder-logo.webp", // Use a placeholder or actual path
+      src: comfyLogo.src, // Use a placeholder or actual path
       alt: "Comfy Org",
     },
     time: "Mar 2025 - present",
@@ -50,16 +45,12 @@ const careers = [
       { color: ColorTags.GREEN, name: "Open Source" },
       { color: ColorTags.LIME, name: "Generative AI" },
     ],
-    // Optional: Add a slug for potential individual pages later
-    // slug: 'awesome-ai-lab-internship'
   },
   {
     title: "ML Engineer",
     company: "Apple",
     logo: {
-      // Optional: Add logo path
-      // src: companyALogo.src,
-      src: "/assets/images/placeholder-logo.webp", // Use a placeholder or actual path
+      src: badappleLogo.src, // Use a placeholder or actual path
       alt: "Apple",
     },
     time: "Jul 2024 - Nov 2024",
@@ -74,19 +65,16 @@ const careers = [
     keywords: [
       { color: ColorTags.YELLOW, name: "Python" },
       { color: ColorTags.FUCHSIA, name: "PyTorch" },
+      { color: ColorTags.VIOLET, name: "Dataset" },
       { color: ColorTags.LIME, name: "Generative AI" },
       { color: ColorTags.SKY, name: "Research" },
     ],
-    // Optional: Add a slug for potential individual pages later
-    // slug: 'awesome-ai-lab-internship'
   },
   {
     title: "Consultant",
     company: "Element, Inc.",
     logo: {
-      // Optional: Add logo path
-      // src: companyALogo.src,
-      src: "/assets/images/placeholder-logo.webp", // Use a placeholder or actual path
+      src: elementLogo.src, // Use a placeholder or actual path
       alt: "Awesome AI Lab Logo",
     },
     time: "Sep 2023 - Jul 2024",
@@ -100,12 +88,8 @@ const careers = [
       { color: ColorTags.YELLOW, name: "Python" },
       { color: ColorTags.FUCHSIA, name: "PyTorch" },
       { color: ColorTags.LIME, name: "Generative AI" },
-      { color: ColorTags.SKY, name: "Research" },
     ],
-    // Optional: Add a slug for potential individual pages later
-    // slug: 'awesome-ai-lab-internship'
   },
-  // Add more career entries here...
 ];
 
 export default careers;
