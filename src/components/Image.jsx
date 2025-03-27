@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 const Image = (props) => {
-  const altStr = props.img.alt.replace(/\s/g, '');
+  const altStr = props.img.alt.replace(/\s/g, "");
   const cssBlurryEdge = `
   #blurry-edge-${altStr}{
     position: relative;
@@ -14,7 +14,7 @@ const Image = (props) => {
 
     display: block;
     background-image: url(${props.img.src});
-    background-size: ${props.isExpanded ? 'contain' : 'cover'};
+    background-size: ${props.isExpanded ? "contain" : "cover"};
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.25s ease;
@@ -33,7 +33,7 @@ const Image = (props) => {
   return (
     <div
       className={`w-full gallery-item cursor-pointer transition-all duration-300 ease-in-out
-        ${props.isExpanded ? 'col-span-2 row-span-2' : 'h-full'}`}
+        ${props.isExpanded ? "col-span-2 row-span-2" : "h-full"}`}
     >
       <style>{cssBlurryEdge}</style>
       <div
@@ -45,8 +45,8 @@ const Image = (props) => {
         <img
           className={`w-full ${
             props.isExpanded
-              ? 'h-full object-contain max-h-[80vh]'
-              : 'h-full object-cover'
+              ? "h-full object-contain max-h-[80vh]"
+              : "h-full object-cover"
           }`}
           src={props.img.src}
           alt={altStr}

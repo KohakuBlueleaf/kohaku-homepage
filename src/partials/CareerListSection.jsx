@@ -1,7 +1,7 @@
-import React from 'react';
-import { Section } from 'astro-boilerplate-components';
-import { GradientText } from '@/components/GradientText.tsx'; // Still assuming GradientText is React/TSX
-import CareerList from '@/components/CareerList.jsx'; // Import the new JSX CareerList
+import React from "react";
+import { Section } from "astro-boilerplate-components";
+import { GradientText } from "@/components/GradientText.tsx"; // Still assuming GradientText is React/TSX
+import CareerList from "@/components/CareerList.jsx"; // Import the new JSX CareerList
 
 const CareerListSection = (props) => (
   <Section

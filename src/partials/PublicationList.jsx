@@ -1,9 +1,9 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/prop-types */
-import { Tags } from 'astro-boilerplate-components';
+import { Tags } from "astro-boilerplate-components";
 
-import { Publication } from '@/components/Publication';
+import { Publication } from "@/components/Publication";
 
 function PublicationList(props) {
   return (

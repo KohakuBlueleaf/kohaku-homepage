@@ -1,8 +1,8 @@
 ---
-import type { IFrontmatter } from 'astro-boilerplate-components';
-import { DocumentPost } from '@/partials/DocumentPost';
-import Base from '@/templates/Base.astro';
-import { AppConfig } from '@/utils/AppConfig';
+import type { IFrontmatter } from "astro-boilerplate-components";
+import { DocumentPost } from "@/partials/DocumentPost";
+import Base from "@/templates/Base.astro";
+import { AppConfig } from "@/utils/AppConfig";
 
 export interface Props {
   content: IFrontmatter;
@@ -11,10 +11,10 @@ export interface Props {
 const rawContent = await Astro.props.rawContent();
 const { content } = Astro.props as Props;
 const title = `${content.title} - ${AppConfig.site_name}`;
-const html = await Astro.slots.render('default');
+const html = await Astro.slots.render("default");
 ---
 
 <Base head={{ title, description: content.description }}>
-  <DocumentPost frontmatter={content} html={html} raw={rawContent} client:load>
-  </DocumentPost>
+  <DocumentPost frontmatter={content} html={html} raw={rawContent} client:load
+  />
 </Base>

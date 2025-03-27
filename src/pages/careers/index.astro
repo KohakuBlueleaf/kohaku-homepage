@@ -1,16 +1,16 @@
 ---
-import { PaginationHeader, Section } from 'astro-boilerplate-components';
-import Base from '@/templates/Base.astro';
-import { AppConfig } from '@/utils/AppConfig';
-import CareerList from '@/components/CareerList.jsx'; // Import the Vue component
+import { PaginationHeader, Section } from "astro-boilerplate-components";
+import Base from "@/templates/Base.astro";
+import { AppConfig } from "@/utils/AppConfig";
+import CareerList from "@/components/CareerList.jsx"; // Import the Vue component
 
 // Import the career data
-import careers from './careers-list.js';
+import careers from "./careers-list.js";
 
 const titleSuffix = ` - ${AppConfig.site_name}`;
 const titleBase = `Career`;
 const title = titleBase + titleSuffix;
-const description = 'My professional experience and career path.';
+const description = "My professional experience and career path.";
 ---
 
 <Base head={{ title, description }}>

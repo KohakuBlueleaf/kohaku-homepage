@@ -1,14 +1,15 @@
 ---
-layout: '@/templates/BasePost.astro'
+layout: "@/templates/BasePost.astro"
 title: Kohaku-XL Delta
 description: Updates of Kohaku-series SDXL models
 pubDate: 2024-03-05T02:00:00+8
-imgSrc: 'https://huggingface.co/KBlueLeaf/Kohaku-XL-Delta/resolve/main/sample/01255.png'
-imgAlt: 'Image post'
+imgSrc: "https://huggingface.co/KBlueLeaf/Kohaku-XL-Delta/resolve/main/sample/01255.png"
+imgAlt: "Image post"
 ---
+
 # Kohaku XL Δelta
 
-***The best "SDXL anime base model that has been trained by an 'individual'."***
+**_The best "SDXL anime base model that has been trained by an 'individual'."_**
 
 join us: https://discord.gg/tPBsKDyRR5
 
@@ -255,10 +256,10 @@ Quality tags are assigned based on the percentile rankings of the favorite count
 
 **Rating tags**
 
-* **General**: safe
-* **Sensitive**: sensitive
-* **Questionable**: nsfw
-* **Explicit**: nsfw, explicit
+- **General**: safe
+- **Sensitive**: sensitive
+- **Questionable**: nsfw
+- **Explicit**: nsfw, explicit
 
 Note: During training, content tagged as "explicit" is also considered under "nsfw" to ensure a comprehensive understanding.
 
@@ -266,11 +267,11 @@ Note: During training, content tagged as "explicit" is also considered under "ns
 Date tags are based on the upload dates of the images, as the metadata does not include the actual creation dates.
 The periods are categorized as follows:
 
-* 2005~2010: old
-* 2011~2014: early
-* 2015~2017: mid
-* 2018~2020: recent
-* 2021~2024: newest
+- 2005~2010: old
+- 2011~2014: early
+- 2015~2017: mid
+- 2018~2020: recent
+- 2021~2024: newest
 
 ### Emphasis
 
@@ -295,8 +296,8 @@ The selection was essentially random, but a fixed seed was utilized to ensure re
 
 **Further Process**
 
-* **Shuffle tags**: The order of general tags was shuffled in each step.
-* **Tag dropout**: Randomly, 10% of general tags were dropped in each step.
+- **Shuffle tags**: The order of general tags was shuffled in each step.
+- **Tag dropout**: Randomly, 10% of general tags were dropped in each step.
 
 ### Training
 
@@ -305,7 +306,7 @@ The training of Kohaku XL Delta was facilitated by the [LyCORIS](https://github.
 **Base Model Refinement**
 Our investigation indicated that training the "token_embedding" and "position_embedding" within CLIP, or the "positional_embedding" in openCLIP, may not be beneficial for fine-tuning on a small to medium scale, particularly with smaller batch sizes.[5][6]
 
-Consequently, we reverted to the original token and position embeddings from TE1 and TE2 models. Following this, we combined the restored gamma rev2  and beta7 models through a weighted sum (weight=0.5), forming the foundational model for Kohaku XL Delta.
+Consequently, we reverted to the original token and position embeddings from TE1 and TE2 models. Following this, we combined the restored gamma rev2 and beta7 models through a weighted sum (weight=0.5), forming the foundational model for Kohaku XL Delta.
 
 This foundational model, referred to as "delta-pre2" or "delta base," serves as a preliminary version without further training, positioning its capabilities between Kohaku XL gamma rev2 and Kohaku XL beta7.
 
@@ -358,7 +359,7 @@ ChatGPT/GPT4: Refine this model card
 
 ---
 
-***AI art should be looked like AI, not like humans.***
+**_AI art should be looked like AI, not like humans._**
 
 ---
 
@@ -390,8 +391,8 @@ https://github.com/TimDettmers/bitsandbytes/issues/659
 
 ### Resource
 
-* Kohaku XL beta. https://civitai.com/models/162577/kohaku-xl-beta
-* Kohaku XL gamma. https://civitai.com/models/270291/kohaku-xl-gamma
+- Kohaku XL beta. https://civitai.com/models/162577/kohaku-xl-beta
+- Kohaku XL gamma. https://civitai.com/models/270291/kohaku-xl-gamma
 
 ## Appendix
 

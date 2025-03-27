@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line import/extensions
-import { Image } from '@/components/Image';
+import { Image } from "@/components/Image";
 
 const Gallery = (props) => {
   const [expandedIndex, setExpandedIndex] = useState(null);

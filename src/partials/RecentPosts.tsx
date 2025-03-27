@@ -1,9 +1,9 @@
-import type { MarkdownInstance } from 'astro';
-import type { IFrontmatter } from 'astro-boilerplate-components';
-import { BlogGallery } from 'astro-boilerplate-components';
+import type { MarkdownInstance } from "astro";
+import type { IFrontmatter } from "astro-boilerplate-components";
+import { BlogGallery } from "astro-boilerplate-components";
 
-import { GradientText } from '@/components/GradientText';
-import { Section } from '@/components/Section';
+import { GradientText } from "@/components/GradientText";
+import { Section } from "@/components/Section";
 
 type IRecentPostsProps = {
   postList: MarkdownInstance<IFrontmatter>[];

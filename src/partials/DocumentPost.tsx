@@ -1,9 +1,9 @@
 /* eslint-disable no-alert */
-import type { IFrontmatter } from 'astro-boilerplate-components';
-import { Section } from 'astro-boilerplate-components';
-import React, { useEffect, useState } from 'react';
+import type { IFrontmatter } from "astro-boilerplate-components";
+import { Section } from "astro-boilerplate-components";
+import React, { useEffect, useState } from "react";
 
-import { DocumentContent } from '../components/DocumentContent';
+import { DocumentContent } from "../components/DocumentContent";
 
 type IDocumentPostProps = {
   frontmatter: IFrontmatter;
@@ -18,7 +18,7 @@ const DocumentPost: React.FC<IDocumentPostProps> = (props) => {
   useEffect(() => {
     let newContent = props.html;
     let newRaw = props.raw;
-    const queryString = window.location.href.split('?')[1] || '';
+    const queryString = window.location.href.split("?")[1] || "";
     const param = new URLSearchParams(queryString);
     param.forEach((value, key) => {
       newContent = newContent.replaceAll(key, value);
@@ -29,11 +29,11 @@ const DocumentPost: React.FC<IDocumentPostProps> = (props) => {
   }, [props.html, props.raw]);
 
   const handleDownload = () => {
-    const blob = new Blob([modifiedRaw], { type: 'text/markdown' });
+    const blob = new Blob([modifiedRaw], { type: "text/markdown" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
+    const a = document.createElement("a");
     a.href = url;
-    a.download = `${props.frontmatter.title || 'document'}.md`;
+    a.download = `${props.frontmatter.title || "document"}.md`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -44,11 +44,11 @@ const DocumentPost: React.FC<IDocumentPostProps> = (props) => {
     navigator.clipboard
       .writeText(modifiedRaw)
       .then(() => {
-        alert('Content copied to clipboard!');
+        alert("Content copied to clipboard!");
       })
       .catch((err) => {
         // eslint-disable-next-line no-console
-        console.error('Failed to copy: ', err);
+        console.error("Failed to copy: ", err);
       });
   };
 

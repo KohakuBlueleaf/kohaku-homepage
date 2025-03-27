@@ -1,8 +1,8 @@
-import { HeroAvatar, HeroSocial, Section } from 'astro-boilerplate-components';
-import badge from 'src/images/kohaku-badge.webp';
-import kohaku from 'src/images/kohaku-bg-full.webp';
+import { HeroAvatar, HeroSocial, Section } from "astro-boilerplate-components";
+import badge from "src/images/kohaku-badge.webp";
+import kohaku from "src/images/kohaku-bg-full.webp";
 
-import { GradientText } from '@/components/GradientText';
+import { GradientText } from "@/components/GradientText";
 
 const cssAvatar = `
 #avatar{
@@ -62,7 +62,7 @@ const Hero = () => (
                 <div id="badge">
                   <div id="badge-after"></div>
                   <img
-                    style={{ height: '8rem' }}
+                    style={{ height: "8rem" }}
                     src={badge.src}
                     alt="Avatar image"
                     loading="lazy"
@@ -107,7 +107,7 @@ const Hero = () => (
             <div id="avatar">
               <div id="avatar-after"></div>
               <img
-                style={{ width: '24rem' }}
+                style={{ width: "24rem" }}
                 src={kohaku.src}
                 alt="Avatar image"
                 loading="lazy"
@@ -121,11 +121,11 @@ const Hero = () => (
           <div
             style={{
               filter:
-                'invert(45%) sepia(30%) saturate(2000%) hue-rotate(220deg) brightness(90%) contrast(80%)',
+                "invert(45%) sepia(30%) saturate(2000%) hue-rotate(220deg) brightness(90%) contrast(80%)",
             }}
           >
             <div
-              style={{ filter: 'invert(1) brightness(0)' }}
+              style={{ filter: "invert(1) brightness(0)" }}
               className="flex flex-row"
             >
               <a className="mr-3" href="https://github.com/KohakuBlueleaf">

@@ -1,14 +1,15 @@
 ---
-layout: '@/templates/BasePost.astro'
+layout: "@/templates/BasePost.astro"
 title: Kohaku-XL Epsilon
 description: Updates of Kohaku-series SDXL models
 pubDate: 2024-04-21T11:00:00+8
-imgSrc: 'https://huggingface.co/KBlueLeaf/Kohaku-XL-Epsilon/resolve/main/output-samples/01598.webp'
-imgAlt: 'Image post'
+imgSrc: "https://huggingface.co/KBlueLeaf/Kohaku-XL-Epsilon/resolve/main/output-samples/01598.webp"
+imgAlt: "Image post"
 ---
+
 # Kohaku XL εpsilon
 
-***The best example of tuning t2i model at home with consumer-level hardware***
+**_The best example of tuning t2i model at home with consumer-level hardware_**
 
 ### join us: https://discord.gg/tPBsKDyRR5
 
@@ -182,8 +183,8 @@ Clearly, Kohaku XL Epsilon is way better than Kohaku XL Delta
 ## Usage
 
 ```
-<1girl/1boy/1other/...>, 
-<character>, <series>, <artists>, 
+<1girl/1boy/1other/...>,
+<character>, <series>, <artists>,
 
 <general tags>,
 <quality tags>, <year tags>, <meta tags>, <rating tags>
@@ -198,7 +199,7 @@ ask \(askzy\), torino aqua, migolu, (jiu ye sang:1.1), (rumoon:0.9), (mizumi zum
 ```
 
 ```
-ciloranko, maccha \(mochancc\), lobelia \(saclia\), migolu, 
+ciloranko, maccha \(mochancc\), lobelia \(saclia\), migolu,
 ask \(askzy\), wanke, (jiu ye sang:1.1), (rumoon:0.9), (mizumi zumi:1.1)
 ```
 
@@ -207,7 +208,7 @@ shiro9jira, ciloranko, ask \(askzy\), (tianliang duohe fangdongye:0.8)
 ```
 
 ```
-(azuuru:1.1), (torino aqua:1.2), (azuuru:1.1), kedama milk, 
+(azuuru:1.1), (torino aqua:1.2), (azuuru:1.1), kedama milk,
 fuzichoco, ask \(askzy\), chen bin, atdan, hito, mignon
 ```
 
@@ -230,16 +231,16 @@ Remember to use `xxx\(yyy\)`when tag have bracket and you are using sd-webui.
 - **Date tags**: newest, recent, mid, early, old
 
 **Quality Tags**
-Quality tags are assigned based on the percentile rankings of the favorite count (fav_count) within each rating category to avoid bias on nsfw content (Animagine XL v3 have met this problem), organized from high to low as follows: ***90th, 75th, 60th, 45th, 30th, and 10th percentiles***. This creates seven distinct quality levels separated by six thresholds.
+Quality tags are assigned based on the percentile rankings of the favorite count (fav_count) within each rating category to avoid bias on nsfw content (Animagine XL v3 have met this problem), organized from high to low as follows: **_90th, 75th, 60th, 45th, 30th, and 10th percentiles_**. This creates seven distinct quality levels separated by six thresholds.
 
 I lower the threshold since I found that the average quality of images in Danbooru is higher than I expected.
 
 **Rating tags**
 
-* **General**: safe
-* **Sensitive**: sensitive
-* **Questionable**: nsfw
-* **Explicit**: nsfw, explicit
+- **General**: safe
+- **Sensitive**: sensitive
+- **Questionable**: nsfw
+- **Explicit**: nsfw, explicit
 
 Note: During training, content tagged as "explicit" is also considered under "nsfw" to ensure a comprehensive understanding.
 
@@ -247,11 +248,11 @@ Note: During training, content tagged as "explicit" is also considered under "ns
 Date tags are based on the upload dates of the images, as the metadata does not include the actual creation dates.
 The periods are categorized as follows:
 
-* 2005~2010: old
-* 2011~2014: early
-* 2015~2017: mid
-* 2018~2020: recent
-* 2021~2024: newest
+- 2005~2010: old
+- 2011~2014: early
+- 2015~2017: mid
+- 2018~2020: recent
+- 2021~2024: newest
 
 ### Resolution
 
@@ -270,14 +271,14 @@ The outputs are also very different (compare to Delta).
 
 The dataset for training this model was sourced from [HakuBooru](https://github.com/KohakuBlueleaf/HakuBooru), comprising 5.2 million images selected from the [danbooru2023](https://huggingface.co/datasets/KBlueLeaf/danbooru2023-webp-4Mpixel) dataset.[2][3]
 
-A selection process was employed to choose ***1 million posts from IDs 0 to 2,000,000***, another ***2 millions from IDs 2,000,000 to 4,999,999***, and ***all posts after ID 5,000,000***, totaling 5.35 million posts. After filtering out deleted posts, gold account posts and those without images (which could be GIFs or MP4s), the final dataset comprised 5.2 million images.
+A selection process was employed to choose **_1 million posts from IDs 0 to 2,000,000_**, another **_2 millions from IDs 2,000,000 to 4,999,999_**, and **_all posts after ID 5,000,000_**, totaling 5.35 million posts. After filtering out deleted posts, gold account posts and those without images (which could be GIFs or MP4s), the final dataset comprised 5.2 million images.
 
 The selection was essentially random, but a fixed seed was utilized to ensure reproducibility.
 
 **Further Process**
 
-* **Shuffle tags**: The order of general tags was shuffled in each step.
-* **Tag dropout**: Randomly, ***15%*** of general tags were dropped in each step.
+- **Shuffle tags**: The order of general tags was shuffled in each step.
+- **Tag dropout**: Randomly, **_15%_** of general tags were dropped in each step.
 
 ### Training
 
@@ -336,11 +337,11 @@ Kohya-ss: Trainer[4]
 
 ---
 
-***AI art should be looked like AI, not like humans.***
+**_AI art should be looked like AI, not like humans._**
 
 ---
 
-*(Some fun fact: this slogan come from my personal homepage. Lot of ppl like this one and put it in their model page.)*
+_(Some fun fact: this slogan come from my personal homepage. Lot of ppl like this one and put it in their model page.)_
 
 ## Reference & Resource
 
@@ -360,9 +361,9 @@ Kohya-ss: Trainer[4]
 
 ### Resource
 
-* Kohaku XL beta. https://civitai.com/models/162577/kohaku-xl-beta
-* Kohaku XL gamma. https://civitai.com/models/270291/kohaku-xl-gamma
-* Kohaku XL delta. https://civitai.com/models/332076/kohaku-xl-delta
+- Kohaku XL beta. https://civitai.com/models/162577/kohaku-xl-beta
+- Kohaku XL gamma. https://civitai.com/models/270291/kohaku-xl-gamma
+- Kohaku XL delta. https://civitai.com/models/332076/kohaku-xl-delta
 
 ## License
 

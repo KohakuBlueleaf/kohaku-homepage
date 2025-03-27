@@ -1,10 +1,10 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/prop-types */
-import { Section } from 'astro-boilerplate-components';
+import { Section } from "astro-boilerplate-components";
 
-import { GradientText } from '@/components/GradientText';
-import PublicationList from './PublicationList';
+import { GradientText } from "@/components/GradientText";
+import PublicationList from "./PublicationList";
 
 const PublicationListSection = (props) => (
   <Section

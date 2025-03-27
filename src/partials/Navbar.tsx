@@ -4,8 +4,8 @@ import {
   NavMenu,
   NavMenuItem,
   Section,
-} from 'astro-boilerplate-components';
-import kohaku_icon from 'src/images/kohaku-icon.webp';
+} from "astro-boilerplate-components";
+import kohaku_icon from "src/images/kohaku-icon.webp";
 
 const Navbar = () => (
   <Section>
@@ -16,7 +16,7 @@ const Navbar = () => (
             <img
               className="mr-1"
               src={kohaku_icon.src}
-              style={{ width: '3.5rem', borderRadius: '20%' }}
+              style={{ width: "3.5rem", borderRadius: "20%" }}
             />
           }
           name="Kohaku is a cute dragon girl."

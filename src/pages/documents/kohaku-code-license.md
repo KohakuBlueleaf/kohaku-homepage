@@ -1,9 +1,10 @@
 ---
-layout: '@/templates/BaseDocument.astro'
+layout: "@/templates/BaseDocument.astro"
 title: Kohaku Code License 1.0
 description: Kohaku Code License 1.0
 pubDate: 2024-12-29T20:30:00+8
 ---
+
 # Kohaku Code License 1.0
 
 **Published by [Your Organization/Name]**
@@ -19,11 +20,13 @@ The **Kohaku Code License** aims to provide maximum freedom for users to work wi
 - **Source Code**: The preferred form for making modifications to the Software, including but not limited to programming language source files, build scripts, configuration files, and documentation.
 
 - **Derived Software**: Any software that is based on, incorporates, or is derived from the original Software. For Derived Software to qualify under this license, it must:
+
   - Include complete source code
   - Provide build instructions or scripts necessary to compile/build the software
   - Include documentation sufficient for users to understand basic usage
-  
+
   Additionally, any Derived Software that is part of a larger software system must:
+
   - Publish all component source code under this license
   - Provide build and deployment scripts that enable recipients to compile and run the complete system
   - Ensure that users of the system can be classified as **Software Users**
@@ -51,9 +54,11 @@ Subject to compliance with this License, [Your Organization/Name] grants you a n
 ### 2. Categories of Use
 
 #### a. Direct Users
+
 Individuals or entities that use the Software directly for their personal or internal purposes.
 
 #### b. Service Providers
+
 Entities that use the Software to offer services or products to Software Users.
 
 ### 3. User Rights
@@ -63,11 +68,13 @@ Software Users retain all rights to any data, content, or outputs they create us
 ### 4. Derivative Software
 
 Any Derived Software must be published under the **Kohaku Code License**. The minimal requirements include:
+
 - Complete source code
 - Build instructions or scripts
 - Basic usage documentation
 
 **Additional Requirements for Derived Software in Larger Systems:**
+
 - All component software must be published under the **Kohaku Code License**
 - Complete build and deployment scripts must be provided
 - Documentation must be sufficient for basic usage
@@ -76,19 +83,21 @@ Any Derived Software must be published under the **Kohaku Code License**. The mi
 ## Restrictions
 
 ### 1. Commercial Usage
+
 - **Definition**: **Commercial Usage** is defined as any entity providing any kind of service or product using the Software in any commercial capacity.
 - **Conditions for Requiring a Custom License**: Commercial Usage is prohibited **only if both** of the following conditions are met:
-    - **Total Revenue** exceeds $25,000 USD
-    - **Usage Duration** exceeds 3 months
+  - **Total Revenue** exceeds $25,000 USD
+  - **Usage Duration** exceeds 3 months
 - **Revenue Threshold and Usage Duration**:
-    - **Trial Period**: Entities are allowed to engage in **Commercial Usage** without a custom license for a trial period of **up to 3 months**, regardless of total revenue
-    - **Revenue Limit**: Entities with **Total Revenue** below or equal to $25,000 USD are permitted to continue **Commercial Usage** without a custom license
-    - **Exceeding Both Thresholds**: If an entity's **Total Revenue** exceeds $25,000 USD and the **Commercial Usage** period exceeds 3 months, the entity must request an exclusive custom license from the author
+  - **Trial Period**: Entities are allowed to engage in **Commercial Usage** without a custom license for a trial period of **up to 3 months**, regardless of total revenue
+  - **Revenue Limit**: Entities with **Total Revenue** below or equal to $25,000 USD are permitted to continue **Commercial Usage** without a custom license
+  - **Exceeding Both Thresholds**: If an entity's **Total Revenue** exceeds $25,000 USD and the **Commercial Usage** period exceeds 3 months, the entity must request an exclusive custom license from the author
 - **Requesting a Custom License**: Contact [Your Contact Email] to request a custom license for Commercial Usage exceeding both thresholds
 
 ### 2. Prohibited Uses
 
 You may not use, modify, copy, reproduce, create Derived Software of, or distribute the Software for:
+
 - Military purposes
 - Surveillance purposes
 - Biometric processing
@@ -100,10 +109,12 @@ You may not use, modify, copy, reproduce, create Derived Software of, or distrib
 ### 3. Distribution Requirements
 
 When distributing the Software or Derived Software, you must:
+
 - Include complete source code
 - Include this License
 - Include build instructions
 - Include the following notice:
+
   ```
   "This software is licensed under the Kohaku Code License by [Your Organization/Name].
   Copyright [Year] [Your Organization/Name].
@@ -111,6 +122,7 @@ When distributing the Software or Derived Software, you must:
   IN NO EVENT SHALL [Your Organization/Name] BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
   LIABILITY ARISING FROM THE USE OF THIS SOFTWARE."
   ```
+
 - For Derived Software:
   - Clearly indicate modifications
   - Provide complete build system
@@ -155,6 +167,7 @@ This License terminates automatically upon violation of any terms.
 You agree to indemnify [Your Organization/Name] against claims arising from your use of the Software.
 
 ## General Provisions
+
 - **Governing Law**: [Your Jurisdiction], without regard to conflict of law principles.
 - **Severability**: Invalid provisions shall not affect other terms
 - **Entire Agreement**: This License represents the complete agreement

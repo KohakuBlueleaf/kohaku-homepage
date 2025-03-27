@@ -42,5 +42,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.astro", "src/**/*.js", "src/**/*.jsx", "src/partials/PublicationList.jsx", "src/partials/PublicationListSection.jsx"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.astro",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/partials/PublicationList.jsx",
+    "src/partials/PublicationListSection.jsx"
+  ]
 }

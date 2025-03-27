@@ -1,5 +1,5 @@
-import React from 'react';
-import CareerItem from './CareerItem'; // Import the JSX CareerItem
+import React from "react";
+import CareerItem from "./CareerItem"; // Import the JSX CareerItem
 
 const CareerList = ({ careers }) => {
   if (!careers || careers.length === 0) {

@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 type IProjectProps = {
   img: {
@@ -12,7 +12,7 @@ type IProjectProps = {
 };
 
 const Project = (props: IProjectProps) => {
-  const altStr = props.img.alt.replace(/\s/g, '');
+  const altStr = props.img.alt.replace(/\s/g, "");
   const cssBlurryEdge = `
   #blurry-edge-${altStr}{
     position: relative;

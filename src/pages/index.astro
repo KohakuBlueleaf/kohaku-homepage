@@ -1,23 +1,23 @@
 ---
-import { type IFrontmatter } from 'astro-boilerplate-components';
+import { type IFrontmatter } from "astro-boilerplate-components";
 
-import { Hero } from '@/partials/Hero';
-import ProjectListSection from '@/partials/ProjectListSection';
-import PublicationListSection from '@/partials/PublicationListSection';
-import { RecentPosts } from '@/partials/RecentPosts.tsx';
-import CareerListSection from '@/partials/CareerListSection.jsx'; // Import the new section wrapper
+import { Hero } from "@/partials/Hero";
+import ProjectListSection from "@/partials/ProjectListSection";
+import PublicationListSection from "@/partials/PublicationListSection";
+import { RecentPosts } from "@/partials/RecentPosts.tsx";
+import CareerListSection from "@/partials/CareerListSection.jsx"; // Import the new section wrapper
 
-import Base from '@/templates/Base.astro';
-import { AppConfig } from '@/utils/AppConfig';
-import { sortByDate } from '@/utils/Posts';
+import Base from "@/templates/Base.astro";
+import { AppConfig } from "@/utils/AppConfig";
+import { sortByDate } from "@/utils/Posts";
 
 // eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import projs from './projects/proj-list';
+import projs from "./projects/proj-list";
 // eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import pubs from './pubs/pubs-list';
-import careers from './careers/careers-list.js'; // Import career data
+import pubs from "./pubs/pubs-list";
+import careers from "./careers/careers-list.js"; // Import career data
 
-const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
+const allPosts = await Astro.glob<IFrontmatter>("./posts/*.md");
 const sortedPosts = sortByDate(allPosts);
 const lastThreePosts = sortedPosts.slice(0, 3);
 const lastThreePubs = pubs.slice(0, 4);
