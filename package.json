@@ -61,7 +61,8 @@
     "astro-boilerplate-components": "^1.0.16",
     "date-fns": "^2.30.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vue": "^3.5.13"
   },
   "volta": {
     "node": "16.15.1"

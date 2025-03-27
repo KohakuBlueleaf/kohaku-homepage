@@ -4,7 +4,9 @@ import { type IFrontmatter } from 'astro-boilerplate-components';
 import { Hero } from '@/partials/Hero';
 import ProjectListSection from '@/partials/ProjectListSection';
 import PublicationListSection from '@/partials/PublicationListSection';
-import { RecentPosts } from '@/partials/RecentPosts';
+import { RecentPosts } from '@/partials/RecentPosts.tsx';
+import CareerListSection from '@/partials/CareerListSection.jsx'; // Import the new section wrapper
+
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
@@ -13,12 +15,14 @@ import { sortByDate } from '@/utils/Posts';
 import projs from './projects/proj-list';
 // eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import pubs from './pubs/pubs-list';
+import careers from './careers/careers-list.js'; // Import career data
 
 const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
 const sortedPosts = sortByDate(allPosts);
 const lastThreePosts = sortedPosts.slice(0, 3);
 const lastThreePubs = pubs.slice(0, 4);
 const lastThreeProjs = projs.slice(0, 4);
+const lastFewCareers = careers.slice(0, 3); // Show 3 most recent
 
 const { title } = AppConfig;
 const { description } = AppConfig;
@@ -28,5 +32,6 @@ const { description } = AppConfig;
   <Hero />
   <ProjectListSection projs={lastThreeProjs} />
   <PublicationListSection pubs={lastThreePubs} />
+  <CareerListSection careers={lastFewCareers} />
   <RecentPosts postList={lastThreePosts} />
 </Base>

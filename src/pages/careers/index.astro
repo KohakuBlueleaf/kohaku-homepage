@@ -1,0 +1,29 @@
+---
+import { PaginationHeader, Section } from 'astro-boilerplate-components';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+import CareerList from '@/components/CareerList.jsx'; // Import the Vue component
+
+// Import the career data
+import careers from './careers-list.js';
+
+const titleSuffix = ` - ${AppConfig.site_name}`;
+const titleBase = `Career`;
+const title = titleBase + titleSuffix;
+const description = 'My professional experience and career path.';
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <PaginationHeader
+      title="Career Path"
+      description="Overview of my professional journey, including internships, contributions, and roles."
+    />
+  </Section>
+
+  <Section>
+    <!-- Use the Vue component, passing data as props -->
+    <!-- client:load ensures the Vue component hydrates on page load -->
+    <CareerList careers={careers} client:load />
+  </Section>
+</Base>
