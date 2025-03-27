@@ -1,0 +1,28 @@
+---
+import { PaginationHeader, Section } from 'astro-boilerplate-components';
+
+import ProjectList from '@/partials/ProjectList';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import projs from './proj-list';
+
+const titleSuffix = ` - ${AppConfig.site_name}`;
+const titleBase = `Projects`;
+const title = titleBase + titleSuffix;
+const description = 'All my open source projects';
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <PaginationHeader
+      title='Projects'
+      description='The list of my open sourced projects'
+    />
+  </Section>
+
+  <Section>
+    <ProjectList projs={projs} />
+  </Section>
+</Base>

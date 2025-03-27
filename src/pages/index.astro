@@ -1,0 +1,32 @@
+---
+import { type IFrontmatter } from 'astro-boilerplate-components';
+
+import { Hero } from '@/partials/Hero';
+import ProjectListSection from '@/partials/ProjectListSection';
+import PublicationListSection from '@/partials/PublicationListSection';
+import { RecentPosts } from '@/partials/RecentPosts';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+import { sortByDate } from '@/utils/Posts';
+
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import projs from './projects/proj-list';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
+import pubs from './pubs/pubs-list';
+
+const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
+const sortedPosts = sortByDate(allPosts);
+const lastThreePosts = sortedPosts.slice(0, 3);
+const lastThreePubs = pubs.slice(0, 4);
+const lastThreeProjs = projs.slice(0, 4);
+
+const { title } = AppConfig;
+const { description } = AppConfig;
+---
+
+<Base head={{ title, description }}>
+  <Hero />
+  <ProjectListSection projs={lastThreeProjs} />
+  <PublicationListSection pubs={lastThreePubs} />
+  <RecentPosts postList={lastThreePosts} />
+</Base>
