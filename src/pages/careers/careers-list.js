@@ -2,13 +2,14 @@ import { ColorTags } from "astro-boilerplate-components";
 import elementLogo from "@/images/element-icon.jpeg";
 import comfyLogo from "@/images/comfy-icon.avif";
 import badappleLogo from "@/images/badapple-logo.jpg";
+import lycorisLogo from "@/images/lycoris.webp";
 
 const careers = [
   {
     title: "Open Source Contributor",
     company: "Kohaku Lab",
     logo: {
-      src: "/src/images/lycoris.webp", // Assuming you want to use existing icon
+      src: lycorisLogo.src, // Assuming you want to use existing icon
       alt: "LyCORIS Logo",
     },
     time: "Apr 2023 - Present",
