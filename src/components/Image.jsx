@@ -40,6 +40,7 @@ const Image = (props) => {
         className="w-full h-full"
         id={`blurry-edge-${altStr}`}
         onClick={props.onExpand}
+        onKeyDown={props.onExpand}
       >
         <div className="w-full h-full" id={`blurry-edge-after-${altStr}`}></div>
         <img
