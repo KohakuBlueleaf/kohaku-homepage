@@ -57,7 +57,7 @@
     "tailwindcss": "^3.3.6"
   },
   "dependencies": {
-    "@astrojs/vue": "^5.0.8",
+    "@astrojs/vue": "^4.0.2",
     "astro-boilerplate-components": "^1.0.16",
     "date-fns": "^2.30.0",
     "react": "^18.2.0",

@@ -79,7 +79,7 @@ const Hero = () => (
       }
       description={
         <>
-          <style>{cssDesc}</style>I am a senior undergraduate student in the
+          <style>{cssDesc}</style>I am a graduate student doing my master's in the
           Computer Science Department at National Tsing Hua University in
           Taiwan.
           <br></br>
@@ -88,11 +88,11 @@ const Hero = () => (
           systems, and developing useful tools.
           <br></br>
           <br></br>
-          I'm currently working on two projects: HakuTPU and HomeDiffusion.
+          I'm currently working on project: HomeDiffusion.
           <br></br>
-          HakuTPU aims to build a high-performance AI accelerator based on
-          Xilinx FPGA, <br></br>while HomeDiffusion seeks to enable pretrained
-          diffusion models on consumer-level hardware.
+          HomeDiffusion seeks to enable pretrained diffusion models on consumer-level hardware.
+          And we already have a usable model: HDM-xut-340M-anime.
+          Which is trained with 1500 GPU hour on 5090.
           <br></br>
           <br></br>
           <span className="font-bold italic">

@@ -8,6 +8,7 @@ import pixeloeIcon from "@/images/pixeloe-icon.jpg";
 // import dtgIcon from '@/images/dtg.webp';
 import tipoIcon from "@/images/tipo-icon.jpg";
 import HakuIcon from "@/images/HakuTPU-icon.webp";
+import HDMIcon from "@/images/HDM-icon.jpeg";
 
 const projs = [
   {
@@ -43,6 +44,15 @@ const projs = [
       { color: ColorTags.FUCHSIA, name: "CV algorithm" },
     ],
     img: { src: pixeloeIcon.src, alt: "HakuBooru Icon" },
+  },
+  {
+    name: "HDM(Home Diffusion Model)",
+    description: `A series of minimalist T2I model trained on customer level hardware`,
+    link: "https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime",
+    category: [
+      { color: ColorTags.LIME, name: "Pretrained Models" },
+    ],
+    img: { src: HDMIcon.src, alt: "Kohaku Model Icon" },
   },
   {
     name: "Kohaku series SD/SDXL models",
