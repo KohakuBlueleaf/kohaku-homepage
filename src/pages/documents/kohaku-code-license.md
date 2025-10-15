@@ -5,174 +5,207 @@ description: Kohaku Code License 1.0
 pubDate: 2024-12-29T20:30:00+8
 ---
 
-# Kohaku Code License 1.0
+# Kohaku Software License 1.0
 
 **Published by [Your Organization/Name]**
 
 ## Purpose
 
-The **Kohaku Code License** aims to provide maximum freedom for users to work with software and source code while protecting contributors from liability and ensuring the freedom of end users. It incorporates commercial usage restrictions to balance open access with sustainable development.
+The **Kohaku Software License** aims to provide maximum freedom for users to work with the Software while protecting contributors from liability and ensuring the freedom of end users. It incorporates commercial usage restrictions to balance open access with sustainable development.
 
 ## Definitions
 
-- **Software**: Any computer program, application, script, library, framework, or other software components, including source code, compiled code, and associated documentation.
+- **Software**: Refers to the source code, compiled binaries, libraries, modules, documentation, configuration files, and any other materials provided under this License.
 
-- **Source Code**: The preferred form for making modifications to the Software, including but not limited to programming language source files, build scripts, configuration files, and documentation.
+- **Source Code**: The preferred form for making modifications to the Software, including all source files, build scripts, configuration files, and documentation necessary to understand, compile, and modify the Software.
 
-- **Derived Software**: Any software that is based on, incorporates, or is derived from the original Software. For Derived Software to qualify under this license, it must:
+- **Derivative Work**: Any software based on or derived from the original Software, including but not limited to:
+  - Modified versions of the Software
+  - Software that incorporates any portion of the Software
+  - Software that links to, imports, or otherwise depends on the Software in a manner that creates a combined work
+  
+  For a Derivative Work to qualify under this license, it must include the complete Source Code necessary to build, use, and modify the Derivative Work.
 
-  - Include complete source code
-  - Provide build instructions or scripts necessary to compile/build the software
-  - Include documentation sufficient for users to understand basic usage
+- **Modify**: To alter, adapt, translate, or otherwise change the Software, or to create Derivative Works.
 
-  Additionally, any Derived Software that is part of a larger software system must:
+- **Service Provider**: An entity that uses the Software to offer services to **End Users**, thereby making the **End Users** the recipients of the service.
 
-  - Publish all component source code under this license
-  - Provide build and deployment scripts that enable recipients to compile and run the complete system
-  - Ensure that users of the system can be classified as **Software Users**
+- **End User**: Any individual or entity that uses the Software directly or uses services provided by a **Service Provider** that utilizes the Software.
 
-- **Binary Distribution**: Any compiled, packaged, or otherwise non-source code form of the Software.
+- **Non-Commercial Purpose**: Uses that do not involve direct or indirect monetary compensation arising from the use of the Software, including personal use, academic research, experimentation, testing, or non-commercial organizational use.
 
-- **Modify**: To alter, transform, or build upon the Software or Source Code.
+- **Commercial Usage**: Any use of the Software where:
+  - The Software is used to provide services or products to customers, clients, or users (internal or external) for monetary compensation, or
+  - The Software is incorporated into commercial products or services, or
+  - The Software is used as part of internal company systems that help internal teams execute their business operations in a for-profit organization, or
+  - The organization using the Software generates revenue from activities directly or indirectly involving the Software
 
-- **Service Provider**: An entity that uses the Software to offer services to **Software Users**, thereby making the **Software Users** the recipients of the service.
-
-- **Software User**: Any individual or entity that uses the Software, either directly or through services provided by a Service Provider.
-
-- **End-User**: Any individual or entity that utilizes a service or product provided by a Service Provider which incorporates the Software.
-
-- **Non-Commercial Purpose**: Uses that do not involve direct or indirect payment arising from the use of the Software, including personal use, research, experimentation, testing, or non-commercial organizational use.
-
-- **Commercial Usage**: Any entity providing any kind of service or product using the Software in any commercial capacity.
+- **Total Revenue**: 
+  - For Service Providers: The total revenue generated from services utilizing the Software
+  - For product vendors: The total revenue from products incorporating the Software
+  - For internal business systems: The total revenue of the organization using the Software for business operations
 
 ## License Grant
 
 ### 1. General Permissions
 
-Subject to compliance with this License, [Your Organization/Name] grants you a non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty-free, and limited license to access, use, modify, create Derived Software, and distribute the Software for **Non-Commercial Purposes** and **Commercial Usage** under certain conditions.
+Subject to compliance with this License, [Your Organization/Name] grants you a non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty-free, and limited license to access, use, modify, create Derivative Works, and distribute the Software for **Non-Commercial Purposes** and **Commercial Usage** under certain conditions.
 
 ### 2. Categories of Use
 
 #### a. Direct Users
 
-Individuals or entities that use the Software directly for their personal or internal purposes.
+Individuals or entities that use the Software directly for their personal, academic, or non-commercial purposes without operating in a commercial capacity.
 
-#### b. Service Providers
+#### b. Service Providers and Commercial Entities
 
-Entities that use the Software to offer services or products to Software Users.
+Entities that use the Software to offer services or products to **End Users**, or that use the Software for internal business operations in a for-profit organization.
 
-### 3. User Rights
+### 3. Source Code Availability
 
-Software Users retain all rights to any data, content, or outputs they create using the Software.
+When using or distributing the Software or any Derivative Works, you must:
 
-### 4. Derivative Software
+- Make the complete Source Code available to recipients
+- Ensure the Source Code is in a form that allows recipients to build, modify, and use the Software
+- Include all necessary build scripts, configuration files, and dependencies information
 
-Any Derived Software must be published under the **Kohaku Code License**. The minimal requirements include:
+### 4. Derivative Works
 
-- Complete source code
-- Build instructions or scripts
-- Basic usage documentation
+Any Derivative Works created must be published under the **Kohaku Software License**. The minimal requirement includes:
 
-**Additional Requirements for Derived Software in Larger Systems:**
+- Complete Source Code of the Derivative Work
+- Build and installation instructions
+- Clear indication of what has been modified from the original Software
 
-- All component software must be published under the **Kohaku Code License**
-- Complete build and deployment scripts must be provided
-- Documentation must be sufficient for basic usage
-- Source code for all components must be available
+**Additional Requirements for Combined Works:**
+
+- If the Derivative Work combines multiple software components or libraries, all such components that form a combined work must be published under this License or a compatible license.
+- You must provide clear documentation on how the components interact and how to build the combined work.
+- **Note**: You are not obligated to release proprietary business logic or workflows that use the Software through standard APIs or interfaces without creating Derivative Works.
 
 ## Restrictions
 
 ### 1. Commercial Usage
 
-- **Definition**: **Commercial Usage** is defined as any entity providing any kind of service or product using the Software in any commercial capacity.
-- **Conditions for Requiring a Custom License**: Commercial Usage is prohibited **only if both** of the following conditions are met:
-  - **Total Revenue** exceeds $25,000 USD
+- **Definition**: **Commercial Usage** is defined as any use where:
+  - The Software is used to provide services or products to customers, clients, or users (internal or external) for monetary compensation
+  - The Software is incorporated into commercial products or services
+  - The Software is used as part of internal company systems that help internal teams execute their business operations in a for-profit organization
+  - The organization using the Software generates revenue from activities directly or indirectly involving the Software
+  
+- **Conditions for Requiring a Commercial License**: Commercial Usage is prohibited **if either** of the following conditions are met:
+  - **Total Revenue** attributable to or associated with the Software exceeds $25,000 USD per year, OR
   - **Usage Duration** exceeds 3 months
+
 - **Revenue Threshold and Usage Duration**:
-  - **Trial Period**: Entities are allowed to engage in **Commercial Usage** without a custom license for a trial period of **up to 3 months**, regardless of total revenue
-  - **Revenue Limit**: Entities with **Total Revenue** below or equal to $25,000 USD are permitted to continue **Commercial Usage** without a custom license
-  - **Exceeding Both Thresholds**: If an entity's **Total Revenue** exceeds $25,000 USD and the **Commercial Usage** period exceeds 3 months, the entity must request an exclusive custom license from the author
-- **Requesting a Custom License**: Contact [Your Contact Email] to request a custom license for Commercial Usage exceeding both thresholds
+  - **Trial Period**: Entities are allowed to engage in **Commercial Usage** without a commercial license for a trial period of **up to 3 months**, provided their **Total Revenue** remains below or equal to $25,000 USD per year.
+  - **Revenue Limit**: Entities with **Total Revenue** attributable to or associated with the Software below or equal to $25,000 USD per year are permitted to continue **Commercial Usage** without a commercial license, provided the **Usage Duration** does not exceed 3 months.
+  - **Exceeding Either Threshold**: If an entity's **Total Revenue** exceeds $25,000 USD per year OR the **Commercial Usage** period exceeds 3 months, the entity must request a commercial license from the author.
+  
+- **Requesting a Commercial License**: Entities that need to engage in **Commercial Usage** exceeding both thresholds must contact the author at [Your Contact Email] to request a commercial license. The author may grant such licenses at their sole discretion, potentially subject to fees, royalties, or revenue-sharing agreements.
 
 ### 2. Prohibited Uses
 
-You may not use, modify, copy, reproduce, create Derived Software of, or distribute the Software for:
+You may not use the Software for:
 
-- Military purposes
-- Surveillance purposes
-- Biometric processing
+- Military purposes or weapons development
+- Surveillance systems or mass monitoring
+- Biometric identification or tracking systems
 - Any activity that infringes on third-party rights
-- Any use violating applicable laws
-- Circumventing security measures
-- Imposing additional restrictions on recipients
+- Any use violating applicable laws, including privacy and security regulations
+- Generating or distributing malware, exploits, or other malicious software
+
+You may not:
+
+- Alter or remove copyright and proprietary notices
+- Circumvent or remove any security or usage restrictions
+- Impose additional terms that conflict with this License
+- Distribute the Software to prohibited individuals, entities, or countries as defined by applicable export laws
 
 ### 3. Distribution Requirements
 
-When distributing the Software or Derived Software, you must:
+When distributing the Software or any Derivative Works, you must:
 
-- Include complete source code
-- Include this License
-- Include build instructions
-- Include the following notice:
+- Include a copy of this License with the distribution
+- Include the complete Source Code or provide clear instructions on how to obtain it
+- **Attribution Notice**: Prominently display the following notice:
 
   ```
-  "This software is licensed under the Kohaku Code License by [Your Organization/Name].
+  This Software is licensed under the Kohaku Software License by [Your Organization/Name].
   Copyright [Year] [Your Organization/Name].
 
-  IN NO EVENT SHALL [Your Organization/Name] BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
-  LIABILITY ARISING FROM THE USE OF THIS SOFTWARE."
+  IN NO EVENT SHALL [Your Organization/Name] BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER 
+  LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.
   ```
 
-- For Derived Software:
-  - Clearly indicate modifications
-  - Provide complete build system
-  - Document basic usage
-- For Service Providers:
-  - Clearly indicate the use of the Software
-  - Provide attribution to original authors
-  - Make license terms available to users
+- **For Derivative Works**:
+  - Include a statement clearly indicating that you have modified the original Software
+  - Document the nature of modifications made
+  - Ensure all Source Code is available under this License
+  
+- **No Misrepresentation**: Do not misrepresent or imply that Derivative Works are official versions or have been endorsed by the original author unless authorized in writing.
+
+- **Service Provider Requirements**:
+  - **Service Providers** must provide **End Users** with clear notice that the service utilizes Software licensed under the Kohaku Software License
+  - Include a reference to the original Software and this License in service documentation, terms of service, or user interface (e.g., "About" page, footer)
 
 ## No Harm and No Liability
 
 ### 1. No Harm
 
-Contributors are not liable for any harm arising from the creation or distribution of the Software.
+You agree that no contributor's conduct in creating the Software has caused you harm. To the extent permitted by law, you waive the right to pursue any legal claims against contributors related to the creation of the Software.
 
 ### 2. No Liability
 
-The Software is provided "as is" without warranty of any kind. Contributors are not liable for damages arising from Software use.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Patent Grant
 
-Contributors grant you a patent license for any patent claims they can license that are necessarily infringed by the Software.
+Each contributor grants you a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable patent license to make, use, offer to sell, sell, import, and otherwise transfer the Software, where such license applies only to those patent claims licensable by such contributor that are necessarily infringed by their contribution(s) alone or by combination of their contribution(s) with the Software.
 
-## User Rights
+## Interpretation of Ambiguous Terms
 
-Software Users retain all rights to data, content, and outputs created using the Software.
+In the event of any ambiguity or uncertainty in the interpretation of the terms of this License, the Licensee has the right to interpret the ambiguous descriptions in a manner that aligns with the intended purpose of this License, which is to promote open access while protecting sustainable development through commercial licensing.
 
-## Interpretation
+## Acceptance and Compliance
 
-Ambiguous terms shall be interpreted in favor of maximum freedom for users while preserving the core principles of this License.
-
-## Acceptance
-
-Using the Software constitutes acceptance of these terms.
+By using, modifying, or distributing the Software, you agree to comply with all terms of this License. Non-compliance may result in the automatic termination of your rights under this License.
 
 ## Termination
 
-This License terminates automatically upon violation of any terms.
+Your rights under this License terminate automatically upon any breach of its terms. Upon termination, you must:
+
+- Cease all use, modification, and distribution of the Software and Derivative Works
+- Destroy all copies of the Software in your possession or control
+- If you are a Service Provider, cease providing services that utilize the Software
+
+Sections regarding No Liability, Indemnification, and General Provisions survive termination.
 
 ## Indemnification
 
-You agree to indemnify [Your Organization/Name] against claims arising from your use of the Software.
+You agree to indemnify, defend, and hold harmless [Your Organization/Name] and its affiliates, contributors, and licensors from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from:
+
+- Your use of the Software
+- Your violation of this License
+- Your violation of any rights of another party
+- Your distribution of the Software or Derivative Works
 
 ## General Provisions
 
-- **Governing Law**: [Your Jurisdiction], without regard to conflict of law principles.
-- **Severability**: Invalid provisions shall not affect other terms
-- **Entire Agreement**: This License represents the complete agreement
-- **No Waiver**: Failure to enforce does not constitute waiver
+- **Governing Law**: This License is governed by the laws of [Your Jurisdiction], without regard to conflict of law principles.
+
+- **Severability**: If any provision of this License is held to be unenforceable or invalid, that provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions shall remain in full force and effect.
+
+- **Entire Agreement**: This License constitutes the entire agreement between you and [Your Organization/Name] regarding the Software and supersedes all prior agreements and understandings.
+
+- **No Waiver**: The failure of [Your Organization/Name] to enforce any provision of this License shall not constitute a waiver of that provision or any other provision.
+
+- **Assignment**: You may not assign or transfer your rights or obligations under this License without prior written consent from [Your Organization/Name].
 
 ## Revisions
 
-[Your Organization/Name] may publish revised versions of this License. You may choose to use terms of any later version.
+[Your Organization/Name] may publish revised versions of the Kohaku Software License from time to time. Each version will be given a distinguishing version number. You may choose to use the Software under the terms of the version of the License under which you originally received the Software, or under the terms of any subsequent version published by [Your Organization/Name].
+
+## Contact
+
+For commercial licensing inquiries, please contact: [Your Contact Email]
