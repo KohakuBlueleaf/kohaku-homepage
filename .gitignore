@@ -20,4 +20,5 @@ pnpm-debug.log*
 # misc
 *.pem
 Thumbs.db
-.history
+.history.tmp/
+.tmp/
