@@ -1,28 +1,27 @@
 ---
-import { PaginationHeader, Section } from "astro-boilerplate-components";
+import Base from "@/layouts/Base.astro";
+import Section from "@/components/Section.vue";
+import ProjectCard from "@/components/ProjectCard.vue";
+import { AppConfig } from "@/utils/AppConfig.js";
 
-import ProjectList from "@/partials/ProjectList";
-import Base from "@/templates/Base.astro";
-import { AppConfig } from "@/utils/AppConfig";
-
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import projs from "./proj-list";
+import projects from "@/config/projects.js";
 
 const titleSuffix = ` - ${AppConfig.site_name}`;
-const titleBase = `Projects`;
+const titleBase = "Projects";
 const title = titleBase + titleSuffix;
 const description = "All my open source projects";
 ---
 
 <Base head={{ title, description }}>
-  <Section>
-    <PaginationHeader
-      title="Projects"
-      description="The list of my open sourced projects"
-    />
-  </Section>
-
-  <Section>
-    <ProjectList projs={projs} />
+  <Section
+    title="Projects"
+    subtitle="The list of my open sourced projects"
+    client:load
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {projects.map((project) => (
+        <ProjectCard project={project} client:visible />
+      ))}
+    </div>
   </Section>
 </Base>

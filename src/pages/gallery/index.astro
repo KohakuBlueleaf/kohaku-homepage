@@ -1,25 +1,31 @@
 ---
-import { PaginationHeader, Section } from "astro-boilerplate-components";
+import Base from "@/layouts/Base.astro";
+import Section from "@/components/Section.vue";
+import Gallery from "@/components/Gallery.vue";
+import { AppConfig } from "@/utils/AppConfig.js";
 
-import Gallery from "@/partials/Gallery";
-import Base from "@/templates/Base.astro";
-import { AppConfig } from "@/utils/AppConfig";
+// Get all images from public/assets/gallery/
+const galleryImages = import.meta.glob("/public/assets/gallery/*.{jpg,jpeg,png,webp,gif}", { eager: true });
 
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import imgUrls from "./img-list";
+// Transform to array with src and alt
+const images = Object.keys(galleryImages).map((path) => {
+  // Convert /public/assets/gallery/filename.webp to /assets/gallery/filename.webp
+  const src = path.replace("/public", "");
+  const filename = path.split("/").pop()?.replace(/\.[^.]+$/, "") || "";
+  return {
+    src,
+    alt: filename,
+  };
+});
 
 const titleSuffix = ` - ${AppConfig.site_name}`;
-const titleBase = `Gallery`;
+const titleBase = "Gallery";
 const title = titleBase + titleSuffix;
 const description = "KohakuBlueLeaf Gallery";
 ---
 
 <Base head={{ title, description }}>
-  <Section>
-    <PaginationHeader title="Gallery" description="Cuwute" />
-  </Section>
-
-  <Section>
-    <Gallery imgUrls={imgUrls} client:load />
+  <Section title="Gallery" client:load>
+    <Gallery images={images} client:visible />
   </Section>
 </Base>

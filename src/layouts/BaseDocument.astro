@@ -1,0 +1,27 @@
+---
+import Base from "@/layouts/Base.astro";
+import { AppConfig } from "@/utils/AppConfig.js";
+
+/**
+ * @typedef {Object} Frontmatter
+ * @property {string} title
+ * @property {string} description
+ */
+
+const { frontmatter } = Astro.props;
+const title = `${frontmatter.title} - ${AppConfig.site_name}`;
+---
+
+<Base head={{ title, description: frontmatter.description }}>
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4 text-gray-100">
+        {frontmatter.title}
+      </h1>
+    </header>
+
+    <div class="prose prose-invert prose-lg max-w-none">
+      <slot />
+    </div>
+  </div>
+</Base>

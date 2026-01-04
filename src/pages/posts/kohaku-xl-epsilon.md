@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BasePost.astro"
+layout: "@/layouts/BasePost.astro"
 title: Kohaku-XL Epsilon
 description: Updates of Kohaku-series SDXL models
 pubDate: 2024-04-21T11:00:00+8

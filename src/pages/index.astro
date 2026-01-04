@@ -1,37 +1,52 @@
 ---
-import { type IFrontmatter } from "astro-boilerplate-components";
+import Base from "@/layouts/Base.astro";
+import Hero from "@/components/Hero.vue";
+import RecentProjects from "@/components/RecentProjects.vue";
+import RecentPublications from "@/components/RecentPublications.vue";
+import RecentCareer from "@/components/RecentCareer.vue";
+import RecentPosts from "@/components/RecentPosts.vue";
+import { AppConfig } from "@/utils/AppConfig.js";
 
-import { Hero } from "@/partials/Hero";
-import ProjectListSection from "@/partials/ProjectListSection";
-import PublicationListSection from "@/partials/PublicationListSection";
-import { RecentPosts } from "@/partials/RecentPosts.tsx";
-import CareerListSection from "@/partials/CareerListSection.jsx"; // Import the new section wrapper
+import { getRecentProjects } from "@/config/projects.js";
+import { getRecentPublications } from "@/config/publications.js";
+import { getRecentCareers } from "@/config/careers.js";
 
-import Base from "@/templates/Base.astro";
-import { AppConfig } from "@/utils/AppConfig";
-import { sortByDate } from "@/utils/Posts";
+// Get recent data
+const recentProjects = getRecentProjects(6);
+const recentPublications = getRecentPublications(3);
+const recentCareers = getRecentCareers(2);
 
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import projs from "./projects/proj-list";
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import pubs from "./pubs/pubs-list";
-import careers from "./careers/careers-list.js"; // Import career data
+// Get recent posts
+const postModules = import.meta.glob("./posts/*.md", { eager: true });
+const allPosts = Object.values(postModules);
+const recentPosts = allPosts
+  .sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime())
+  .slice(0, 3);
 
-const allPosts = await Astro.glob<IFrontmatter>("./posts/*.md");
-const sortedPosts = sortByDate(allPosts);
-const lastThreePosts = sortedPosts.slice(0, 3);
-const lastThreePubs = pubs.slice(0, 4);
-const lastThreeProjs = projs.slice(0, 4);
-const lastFewCareers = careers.slice(0, 3); // Show 3 most recent
-
-const { title } = AppConfig;
-const { description } = AppConfig;
+const title = "Kohaku's Homepage";
+const description = AppConfig.description;
 ---
 
 <Base head={{ title, description }}>
-  <Hero />
-  <ProjectListSection projs={lastThreeProjs} />
-  <PublicationListSection pubs={lastThreePubs} />
-  <CareerListSection careers={lastFewCareers} />
-  <RecentPosts postList={lastThreePosts} />
+  <Hero client:load />
+
+  <RecentProjects
+    projects={recentProjects}
+    client:visible
+  />
+
+  <RecentPublications
+    publications={recentPublications}
+    client:visible
+  />
+
+  <RecentCareer
+    careers={recentCareers}
+    client:visible
+  />
+
+  <RecentPosts
+    posts={recentPosts}
+    client:visible
+  />
 </Base>

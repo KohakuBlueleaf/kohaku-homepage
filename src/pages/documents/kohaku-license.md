@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BaseDocument.astro"
+layout: "@/layouts/BaseDocument.astro"
 title: Kohaku License 1.0
 description: Kohaku License 1.0
 pubDate: 2024-09-29T14:00:00+8

@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BasePost.astro"
+layout: "@/layouts/BasePost.astro"
 title: Kohaku-XL Delta
 description: Updates of Kohaku-series SDXL models
 pubDate: 2024-03-05T02:00:00+8
