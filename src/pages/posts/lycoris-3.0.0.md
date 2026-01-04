@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BasePost.astro"
+layout: "@/layouts/BasePost.astro"
 title: LyCORIS 3.0.0
 description: LyCORIS is now updated to 3.0.0
 pubDate: 2024-07-02T00:30:00

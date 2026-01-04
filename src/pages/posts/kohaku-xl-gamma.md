@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BasePost.astro"
+layout: "@/layouts/BasePost.astro"
 title: Kohaku-XL gamma
 description: Updates of Kohaku-series SDXL models
 pubDate: 2024-01-19T21:00:00+8

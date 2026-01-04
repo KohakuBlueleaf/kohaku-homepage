@@ -1,28 +1,27 @@
 ---
-import { PaginationHeader, Section } from "astro-boilerplate-components";
+import Base from "@/layouts/Base.astro";
+import Section from "@/components/Section.vue";
+import PublicationCard from "@/components/PublicationCard.vue";
+import { AppConfig } from "@/utils/AppConfig.js";
 
-import PublicationList from "@/partials/PublicationList";
-import Base from "@/templates/Base.astro";
-import { AppConfig } from "@/utils/AppConfig";
-
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
-import pubs from "./pubs-list";
+import publications from "@/config/publications.js";
 
 const titleSuffix = ` - ${AppConfig.site_name}`;
-const titleBase = `Publications`;
+const titleBase = "Publications";
 const title = titleBase + titleSuffix;
 const description = "All my academic publications";
 ---
 
 <Base head={{ title, description }}>
-  <Section>
-    <PaginationHeader
-      title="Publications"
-      description="The list of my publications"
-    />
-  </Section>
-
-  <Section>
-    <PublicationList pubs={pubs} />
+  <Section
+    title="Publications"
+    subtitle="The list of my publications"
+    client:load
+  >
+    <div class="flex flex-col gap-4">
+      {publications.map((publication) => (
+        <PublicationCard publication={publication} client:visible />
+      ))}
+    </div>
   </Section>
 </Base>

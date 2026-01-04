@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BasePost.astro"
+layout: "@/layouts/BasePost.astro"
 title: TIPO
 description: Text to Image with Text Presampling for Prompt Optimization
 pubDate: 2024-10-06T23:40:00+8

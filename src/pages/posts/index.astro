@@ -1,0 +1,34 @@
+---
+import Base from "@/layouts/Base.astro";
+import Section from "@/components/Section.vue";
+import BlogPostCard from "@/components/BlogPostCard.vue";
+import { AppConfig } from "@/utils/AppConfig.js";
+
+// Get all markdown posts
+const postModules = import.meta.glob("./*.md", { eager: true });
+const allPosts = Object.values(postModules);
+
+// Sort by pubDate descending
+const sortedPosts = allPosts.sort((a, b) => {
+  return new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime();
+});
+
+const titleSuffix = ` - ${AppConfig.site_name}`;
+const titleBase = "Blog";
+const title = titleBase + titleSuffix;
+const description = "Some updates of my projects/publications or just some random stuff.";
+---
+
+<Base head={{ title, description }}>
+  <Section
+    title="UwU"
+    subtitle="Some updates of my projects/publications or just some random stuff."
+    client:load
+  >
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {sortedPosts.map((post) => (
+        <BlogPostCard post={post} client:visible />
+      ))}
+    </div>
+  </Section>
+</Base>

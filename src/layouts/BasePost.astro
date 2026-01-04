@@ -1,0 +1,59 @@
+---
+import Base from "@/layouts/Base.astro";
+import { AppConfig } from "@/utils/AppConfig.js";
+
+/**
+ * @typedef {Object} Frontmatter
+ * @property {string} title
+ * @property {string} description
+ * @property {string} pubDate
+ * @property {string} [imgSrc]
+ * @property {string} [imgAlt]
+ */
+
+const { frontmatter } = Astro.props;
+const title = `${frontmatter.title} - ${AppConfig.site_name}`;
+
+const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<Base head={{ title, description: frontmatter.description }}>
+  <article class="max-w-4xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+        {frontmatter.title}
+      </h1>
+      <time class="text-gray-400 text-sm" datetime={frontmatter.pubDate}>
+        {formattedDate}
+      </time>
+
+      {frontmatter.imgSrc && (
+        <div class="mt-6">
+          <img
+            src={frontmatter.imgSrc}
+            alt={frontmatter.imgAlt || frontmatter.title}
+            class="w-full rounded-lg object-cover"
+          />
+        </div>
+      )}
+    </header>
+
+    <div class="prose prose-invert prose-lg max-w-none">
+      <slot />
+    </div>
+
+    <footer class="mt-12 pt-8 border-t border-gray-700">
+      <a
+        href="/posts/"
+        class="text-cyan-400 hover:text-cyan-300 transition-colors inline-flex items-center gap-2"
+      >
+        <span>&larr;</span>
+        <span>Back to Blogs</span>
+      </a>
+    </footer>
+  </article>
+</Base>

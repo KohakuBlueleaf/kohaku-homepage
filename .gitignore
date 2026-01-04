@@ -1,3 +1,6 @@
+.astro/
+.cluade/
+
 # build output
 dist/
 .output/

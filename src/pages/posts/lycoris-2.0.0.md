@@ -1,5 +1,5 @@
 ---
-layout: "@/templates/BasePost.astro"
+layout: "@/layouts/BasePost.astro"
 title: LyCORIS 2.0.0
 description: LyCORIS is now updated to 2.0.0 with lot of new things.
 pubDate: 2023-12-24T14:31:43
