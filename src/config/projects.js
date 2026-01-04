@@ -6,67 +6,80 @@ export const projects = [
     description:
       'Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion.',
     link: 'https://github.com/KohakuBlueleaf/LyCORIS',
-    tags: ['python', 'Neural Network', 'Stable Diffusion'],
-    image: '/assets/projects/lycoris.webp',
+    tags: ['Python', 'Neural Network', 'Stable Diffusion'],
   },
   {
     name: 'TIPO',
     description: 'Text to Image with Text Presampling for Optimal Prompting.',
     link: 'https://github.com/KohakuBlueleaf/KGen',
-    tags: ['python', 'Neural Network', 'LLM'],
-    image: '/assets/projects/tipo-icon.jpg',
+    tags: ['Python', 'Neural Network', 'LLM'],
+  },
+  {
+    name: 'HDM (Home Diffusion Model)',
+    description:
+      'A series of minimalist T2I model trained on consumer level hardware.',
+    link: 'https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime',
+    tags: ['Pretrained Models', 'Stable Diffusion'],
+  },
+  {
+    name: 'KohakuRAG',
+    description:
+      '#1 in Wattbot2025. Domain-agnostic Retrieval-Augmented Generation (RAG) framework designed for production use.',
+    link: 'https://github.com/KohakuBlueleaf/KohakuRAG',
+    tags: ['Python', 'LLM', 'RAG', 'Framework'],
+  },
+  {
+    name: 'KohakuHub',
+    description:
+      'An open sourced alternative for HuggingFace, fully compatible with HuggingFace Hub, Transformers and Diffusers.',
+    link: 'https://github.com/KohakuBlueleaf/KohakuHub',
+    tags: ['Infra', 'Full Stack', 'Dataset'],
+  },
+  {
+    name: 'KohakuBoard',
+    description:
+      'An open sourced alternative for WandB with async logging, efficient storing and fast frontend for visualization.',
+    link: 'https://github.com/KohakuBlueleaf/KohakuBoard',
+    tags: ['Infra', 'Full Stack', 'Training'],
   },
   {
     name: 'PixelOE',
     description:
       'Detail-Oriented Pixelization based on Contrast-Aware Outline Expansion.',
     link: 'https://github.com/KohakuBlueleaf/PixelOE',
-    tags: ['python', 'CV algorithm'],
-    image: '/assets/projects/pixeloe-icon.jpg',
+    tags: ['Python', 'CV Algorithm'],
   },
   {
-    name: 'HDM(Home Diffusion Model)',
+    name: 'KohakuVault',
     description:
-      'A series of minimalist T2I model trained on customer level hardware',
-    link: 'https://huggingface.co/KBlueLeaf/HDM-xut-340M-anime',
-    tags: ['Pretrained Models'],
-    image: '/assets/projects/HDM-icon.jpeg',
+      'Key-Value/Columnar storage based on SQLite with Rust, supports vector search and auto msgpack of python object.',
+    link: 'https://github.com/KohakuBlueleaf/KohakuVault',
+    tags: ['Database', 'Vector Search', 'Python', 'Rust'],
   },
   {
-    name: 'Kohaku series SD/SDXL models',
+    name: 'Kohaku SD/SDXL Models',
     description: 'A series of anime style Stable Diffusion models.',
     link: 'https://civitai.com/user/kblueleaf',
-    tags: ['Stable Diffusion', 'Pretrained Models'],
-    image: '/assets/projects/kohaku-series-model-icon.webp',
+    tags: ['Pretrained Models', 'Stable Diffusion'],
   },
   {
     name: 'HakuTPU [WIP]',
     description: 'AI Accelerator softcore for Xilinx UltraScale+ FPGAs.',
     link: 'https://github.com/KohakuBlueleaf/HakuTPU',
     tags: ['Verilog', 'Logic Design', 'AI Accelerator'],
-    image: '/assets/projects/HakuTPU-icon.webp',
   },
   {
-    name: 'Stable Diffusion Webui (Collaborator)',
-    description: 'Stable Diffusion web UI',
-    link: 'https://github.com/AUTOMATIC1111/stable-diffusion-webui',
-    tags: ['python', 'Neural Network', 'Stable Diffusion'],
-    image: '/assets/projects/sd-webui.webp',
+    name: 'SenseCraft',
+    description: 'Unified Perceptual Feature Loss Framework.',
+    link: 'https://github.com/KohakuBlueleaf/SenseCraft',
+    tags: ['PyTorch', 'Neural Network', 'CV'],
   },
   {
-    name: 'HakuBooru',
-    description: 'text-image dataset maker for anime-style images',
-    link: 'https://github.com/KohakuBlueleaf/HakuBooru',
-    tags: ['Dataset'],
-    image: '/assets/projects/hakubooru-icon.webp',
-  },
-  {
-    name: 'HakuLatent',
+    name: 'OptimFactory',
     description:
-      'A comprehensive codebase for training and finetuning Image <> Latent models.',
-    link: 'https://github.com/KohakuBlueleaf/HakuLatent',
-    tags: ['Neural Network'],
-    image: '',
+      'A set of optimizer utils to utilize frontier hyperparam transfer rules/algos.',
+    link: 'https://github.com/KohakuBlueleaf/OptimFactory',
+    tags: ['PyTorch', 'Neural Network', 'Training'],
   },
 ];
 
