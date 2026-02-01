@@ -2,6 +2,22 @@
 
 export const publications = [
   {
+    title: 'TIPO: Text to Image with Text Presampling for Prompt Optimization',
+    authors: [
+      { name: 'Shin-Ying Yeh', highlight: true },
+      { name: 'YI LI' },
+      { name: 'Sang-Hyun Park' },
+      { name: 'Giyeong Oh' },
+      { name: 'Xuehai Wang' },
+      { name: 'Min Song' },
+      { name: 'Youngjae Yu' },
+      { name: 'Shang-Hong Lai' },
+    ],
+    venue: 'ICLR',
+    year: 2026,
+    link: 'https://openreview.net/forum?id=dDnw3Pp70x',
+  },
+  {
     title: 'Home-made Diffusion Model from Scratch to Hatch',
     authors: [
       { name: 'Shih-Ying Yeh', highlight: true },
@@ -9,19 +25,6 @@ export const publications = [
     venue: 'Arxiv',
     year: 2025,
     link: 'https://arxiv.org/abs/2509.06068',
-  },
-  {
-    title: 'TIPO: Text to Image with Text Presampling for Prompt Optimization',
-    authors: [
-      { name: 'Shin-Ying Yeh', highlight: true },
-      { name: 'Sang-Hyun Park' },
-      { name: 'Giyeong Oh' },
-      { name: 'Min Song' },
-      { name: 'Youngjae Yu' },
-    ],
-    venue: 'Arxiv',
-    year: 2024,
-    link: 'http://arxiv.org/abs/2411.08127',
   },
   {
     title:
