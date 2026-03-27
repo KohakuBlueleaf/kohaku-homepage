@@ -31,6 +31,7 @@ const props = defineProps({
 const tagColorMap = {
   // Languages
   Python: "bg-green-500/20 text-green-400",
+  "C++": "bg-blue-500/20 text-blue-400",
   Rust: "bg-orange-500/20 text-orange-400",
   Verilog: "bg-orange-500/20 text-orange-400",
 
