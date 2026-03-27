@@ -14,9 +14,9 @@ const defaultData = {
   badgeImage: '/assets/images/kohaku-badge.webp',
   avatarImage: '/assets/images/kohaku-bg-full.webp',
   bio: [
-    'I am a graduate student doing my master\'s in the Computer Science Department at National Tsing Hua University in Taiwan.',
-    'I am interested in improving the performance of Generative AI, focusing on training better models, building efficient and robust systems, and developing useful tools.',
-    'I\'m currently working on project: HomeDiffusion. HomeDiffusion seeks to enable pretrained diffusion models on consumer-level hardware. And we already have a usable model: HDM-xut-340M-anime. Which is trained with 1500 GPU hour on 5090.'
+    'CS master\'s student at National Tsing Hua University in Taiwan. Published at ICLR 2024 (LyCORIS) and ICLR 2026 (TIPO).',
+    'I research and build AI systems end-to-end — from neural network training and GPU kernels to infrastructure, databases, RAG frameworks, and agent systems.',
+    'Leading Kohaku Lab, a virtual open-source research lab. Currently exploring VAE/AE/VQ-VAE architectures for generative modeling, building agent frameworks (KohakuTerrarium), and playing with AI board game engines. Everything we build is 100% open access.'
   ],
   quote: 'AI art should look like AI, not humans.',
   socials: [
