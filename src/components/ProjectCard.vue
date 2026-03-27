@@ -1,19 +1,20 @@
 <script setup>
+import { ref, onMounted } from 'vue';
 import TagBadge from "./TagBadge.vue";
+import { parseRepo, getStats, formatCount } from "../utils/github-stats.js";
 
-/**
- * @typedef {Object} Project
- * @property {string} name - Project name
- * @property {string} description - Project description
- * @property {string} link - Project link
- * @property {string[]} tags - Project tags
- */
+const stats = ref(null);
 
-defineProps({
+const props = defineProps({
   project: {
     type: Object,
     required: true,
   },
+});
+
+onMounted(async () => {
+  const repo = parseRepo(props.project.link);
+  stats.value = await getStats(repo);
 });
 </script>
 
@@ -39,5 +40,17 @@ defineProps({
     <p class="mt-3 text-sm text-gray-400 leading-relaxed">
       {{ project.description }}
     </p>
+
+    <!-- GitHub Stats -->
+    <div v-if="stats" class="flex items-center gap-3 mt-3 text-gray-500 text-xs">
+      <span class="inline-flex items-center gap-1">
+        <span class="i-carbon-star text-yellow-500"></span>
+        {{ formatCount(stats.stars) }}
+      </span>
+      <span v-if="stats.forks" class="inline-flex items-center gap-1">
+        <span class="i-carbon-branch"></span>
+        {{ formatCount(stats.forks) }}
+      </span>
+    </div>
   </a>
 </template>
